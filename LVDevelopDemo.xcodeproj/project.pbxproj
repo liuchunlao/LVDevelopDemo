@@ -463,6 +463,7 @@
 				12764AAF1AFC98590096002D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12764AB01AFC98590096002D /* Build configuration list for PBXNativeTarget "LVDevelopDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +472,7 @@
 				12764AB21AFC98590096002D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

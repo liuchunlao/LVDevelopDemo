@@ -9,6 +9,7 @@
  *  注意：
  *  1.需要导入LocalAuthentication.framework。
  *  2.iOS8以后才支持的功能。
+ *  3.参考资料：http://blog.csdn.net/pucker/article/details/43410585 swift版本
  */
 
 #import "LVTouchIdViewController.h"

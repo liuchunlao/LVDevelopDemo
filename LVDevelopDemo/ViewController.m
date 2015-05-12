@@ -25,7 +25,7 @@
 
 - (NSArray *)funcArr {
     if (!_funcArr) {
-        _funcArr = @[@"指纹识别", @"蓝牙设备扫描、连接"];
+        _funcArr = @[@"指纹识别", @"蓝牙设备扫描、连接", @"打开闪光灯"];
     }
     return _funcArr;
 }
@@ -74,6 +74,8 @@
         case 1:
             [self blueToothDemo];
             break;
+        case 2:
+            [self openTheFlash];
             
         default:
             break;
@@ -91,8 +93,16 @@
 #pragma mark - 蓝牙设备扫描检测演示
 - (void)blueToothDemo {
 
+
+
 }
 
+
+#pragma mark - 打开闪光灯
+- (void)openTheFlash {
+    NSLog(@"打开闪光灯");
+
+}
 
 
 
