@@ -8,18 +8,21 @@
 
 #import "LVInfoViewController.h"
 
-@interface LVInfoViewController ()
+@interface LVInfoViewController () <CBPeripheralDelegate, UIActionSheetDelegate>
 
+@property (nonatomic, strong) NSArray *servicesArr;
+@property (nonatomic, strong) NSArray *characteristicsArr;
+
+@property (nonatomic, weak) UITableView *tableView;
 @end
 
 @implementation LVInfoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     
-
-
+    self.peripheral.delegate = self;
+    [self.peripheral discoverServices:nil];
 
 }
 

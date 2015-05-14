@@ -40,7 +40,9 @@
     
     self.scanBtn.layer.cornerRadius = 10;
     
-    CBCentralManager *manager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    
+    CBCentralManager *manager = [[CBCentralManager alloc] initWithDelegate:self queue:queue];
     self.manager = manager;
     
     self.tableView.delegate = self;
@@ -164,7 +166,8 @@
     
     if (![self.peripherals containsObject:peripheral]) {
         [self.peripherals addObject:peripheral];
-        [self.tableView reloadData];
+//        [self.tableView reloadData];
+        [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
     }
 }
 
@@ -180,10 +183,13 @@
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
     
     // 连接外设成功跳转显示设备信息控制器
-    LVInfoViewController *infoVc = [[LVInfoViewController alloc] init];
-    infoVc.peripheral = peripheral;
-    infoVc.title = peripheral.name;
-    [self.navigationController pushViewController:infoVc animated:YES];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [MBProgressHUD showSuccess:@"连接成功"];
+        LVInfoViewController *infoVc = [[LVInfoViewController alloc] init];
+        infoVc.peripheral = peripheral;
+        infoVc.title = peripheral.name;
+        [self.navigationController pushViewController:infoVc animated:YES];
+    });
 }
 
 /*!
@@ -200,6 +206,10 @@
 - (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
     if (error) {
         NSLog(@"%@", error);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD showError:@"连接失败"];
+        });
+        
     }else {
         NSLog(@"连接成功");
     }
