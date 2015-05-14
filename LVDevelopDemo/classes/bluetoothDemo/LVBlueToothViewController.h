@@ -2,7 +2,7 @@
 //  LVBlueToothViewController.h
 //  LVDevelopDemo
 //
-//  Created by PBOC CS on 15/5/8.
+//  Created by liuchunlao on 15/5/14.
 //  Copyright (c) 2015年 liuchunlao. All rights reserved.
 //
 

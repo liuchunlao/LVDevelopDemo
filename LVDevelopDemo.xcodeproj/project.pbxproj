@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		124EB3F61B04942700C89BA7 /* LVBlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124EB3F41B04942700C89BA7 /* LVBlueToothViewController.m */; };
+		124EB3F71B04942700C89BA7 /* LVBlueToothViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 124EB3F51B04942700C89BA7 /* LVBlueToothViewController.xib */; };
+		124EB3FB1B04A2D500C89BA7 /* LVInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124EB3F91B04A2D500C89BA7 /* LVInfoViewController.m */; };
+		124EB3FC1B04A2D500C89BA7 /* LVInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 124EB3FA1B04A2D500C89BA7 /* LVInfoViewController.xib */; };
+		124EB4031B04A3E600C89BA7 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 124EB3FF1B04A3E600C89BA7 /* MBProgressHUD+MJ.m */; };
+		124EB4041B04A3E600C89BA7 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 124EB4001B04A3E600C89BA7 /* MBProgressHUD.bundle */; };
+		124EB4051B04A3E600C89BA7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 124EB4021B04A3E600C89BA7 /* MBProgressHUD.m */; };
 		12764A901AFC98590096002D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12764A8F1AFC98590096002D /* main.m */; };
 		12764A931AFC98590096002D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12764A921AFC98590096002D /* AppDelegate.m */; };
 		12764A961AFC98590096002D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12764A951AFC98590096002D /* ViewController.m */; };
@@ -16,8 +23,6 @@
 		12764AAA1AFC98590096002D /* LVDevelopDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12764AA91AFC98590096002D /* LVDevelopDemoTests.m */; };
 		12764AB81AFC9BA50096002D /* LVTouchIdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12764AB71AFC9BA50096002D /* LVTouchIdViewController.m */; };
 		12764ABA1AFC9BE10096002D /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12764AB91AFC9BE10096002D /* LocalAuthentication.framework */; };
-		12764ABD1AFC9D7C0096002D /* LVBlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12764ABC1AFC9D7C0096002D /* LVBlueToothViewController.m */; };
-		12764ABF1AFC9D8C0096002D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12764ABE1AFC9D8C0096002D /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +36,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		124EB3F31B04942700C89BA7 /* LVBlueToothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVBlueToothViewController.h; sourceTree = "<group>"; };
+		124EB3F41B04942700C89BA7 /* LVBlueToothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVBlueToothViewController.m; sourceTree = "<group>"; };
+		124EB3F51B04942700C89BA7 /* LVBlueToothViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LVBlueToothViewController.xib; sourceTree = "<group>"; };
+		124EB3F81B04A2D500C89BA7 /* LVInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVInfoViewController.h; sourceTree = "<group>"; };
+		124EB3F91B04A2D500C89BA7 /* LVInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVInfoViewController.m; sourceTree = "<group>"; };
+		124EB3FA1B04A2D500C89BA7 /* LVInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LVInfoViewController.xib; sourceTree = "<group>"; };
+		124EB3FE1B04A3E500C89BA7 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		124EB3FF1B04A3E600C89BA7 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		124EB4001B04A3E600C89BA7 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		124EB4011B04A3E600C89BA7 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		124EB4021B04A3E600C89BA7 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		12764A8A1AFC98590096002D /* LVDevelopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LVDevelopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12764A8E1AFC98590096002D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12764A8F1AFC98590096002D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,9 +63,6 @@
 		12764AB61AFC9BA50096002D /* LVTouchIdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVTouchIdViewController.h; sourceTree = "<group>"; };
 		12764AB71AFC9BA50096002D /* LVTouchIdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVTouchIdViewController.m; sourceTree = "<group>"; };
 		12764AB91AFC9BE10096002D /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
-		12764ABB1AFC9D7C0096002D /* LVBlueToothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVBlueToothViewController.h; sourceTree = "<group>"; };
-		12764ABC1AFC9D7C0096002D /* LVBlueToothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVBlueToothViewController.m; sourceTree = "<group>"; };
-		12764ABE1AFC9D8C0096002D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12764ABF1AFC9D8C0096002D /* CoreBluetooth.framework in Frameworks */,
 				12764ABA1AFC9BE10096002D /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,10 +84,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		124EB3F21B0493FB00C89BA7 /* bluetoothDemo */ = {
+			isa = PBXGroup;
+			children = (
+				124EB3F31B04942700C89BA7 /* LVBlueToothViewController.h */,
+				124EB3F41B04942700C89BA7 /* LVBlueToothViewController.m */,
+				124EB3F51B04942700C89BA7 /* LVBlueToothViewController.xib */,
+				124EB3F81B04A2D500C89BA7 /* LVInfoViewController.h */,
+				124EB3F91B04A2D500C89BA7 /* LVInfoViewController.m */,
+				124EB3FA1B04A2D500C89BA7 /* LVInfoViewController.xib */,
+			);
+			path = bluetoothDemo;
+			sourceTree = "<group>";
+		};
+		124EB3FD1B04A3E500C89BA7 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				124EB3FE1B04A3E500C89BA7 /* MBProgressHUD+MJ.h */,
+				124EB3FF1B04A3E600C89BA7 /* MBProgressHUD+MJ.m */,
+				124EB4001B04A3E600C89BA7 /* MBProgressHUD.bundle */,
+				124EB4011B04A3E600C89BA7 /* MBProgressHUD.h */,
+				124EB4021B04A3E600C89BA7 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		12764A811AFC98590096002D = {
 			isa = PBXGroup;
 			children = (
-				12764ABE1AFC9D8C0096002D /* CoreBluetooth.framework */,
 				12764AB91AFC9BE10096002D /* LocalAuthentication.framework */,
 				12764A8C1AFC98590096002D /* LVDevelopDemo */,
 				12764AA61AFC98590096002D /* LVDevelopDemoTests */,
@@ -95,6 +131,7 @@
 		12764A8C1AFC98590096002D /* LVDevelopDemo */ = {
 			isa = PBXGroup;
 			children = (
+				124EB3FD1B04A3E500C89BA7 /* MBProgressHUD */,
 				12764AB31AFC9B1E0096002D /* classes */,
 				12764A911AFC98590096002D /* AppDelegate.h */,
 				12764A921AFC98590096002D /* AppDelegate.m */,
@@ -137,19 +174,10 @@
 		12764AB31AFC9B1E0096002D /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				12764AB41AFC9B530096002D /* buletoothDemo */,
+				124EB3F21B0493FB00C89BA7 /* bluetoothDemo */,
 				12764AB51AFC9B530096002D /* touchIdDemo */,
 			);
 			path = classes;
-			sourceTree = "<group>";
-		};
-		12764AB41AFC9B530096002D /* buletoothDemo */ = {
-			isa = PBXGroup;
-			children = (
-				12764ABB1AFC9D7C0096002D /* LVBlueToothViewController.h */,
-				12764ABC1AFC9D7C0096002D /* LVBlueToothViewController.m */,
-			);
-			path = buletoothDemo;
 			sourceTree = "<group>";
 		};
 		12764AB51AFC9B530096002D /* touchIdDemo */ = {
@@ -243,8 +271,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				12764A991AFC98590096002D /* Main.storyboard in Resources */,
+				124EB3FC1B04A2D500C89BA7 /* LVInfoViewController.xib in Resources */,
+				124EB3F71B04942700C89BA7 /* LVBlueToothViewController.xib in Resources */,
 				12764A9E1AFC98590096002D /* LaunchScreen.xib in Resources */,
 				12764A9B1AFC98590096002D /* Images.xcassets in Resources */,
+				124EB4041B04A3E600C89BA7 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,11 +293,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12764ABD1AFC9D7C0096002D /* LVBlueToothViewController.m in Sources */,
+				124EB3FB1B04A2D500C89BA7 /* LVInfoViewController.m in Sources */,
+				124EB3F61B04942700C89BA7 /* LVBlueToothViewController.m in Sources */,
 				12764A961AFC98590096002D /* ViewController.m in Sources */,
 				12764AB81AFC9BA50096002D /* LVTouchIdViewController.m in Sources */,
+				124EB4031B04A3E600C89BA7 /* MBProgressHUD+MJ.m in Sources */,
 				12764A931AFC98590096002D /* AppDelegate.m in Sources */,
 				12764A901AFC98590096002D /* main.m in Sources */,
+				124EB4051B04A3E600C89BA7 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

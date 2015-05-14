@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LVBlueToothViewController">
+            <connections>
+                <outlet property="scanBtn" destination="KG2-yw-Jgh" id="RP0-3W-JGr"/>
+                <outlet property="tableView" destination="6xc-RW-hTx" id="TSz-uG-8JR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KG2-yw-Jgh">
+                    <rect key="frame" x="8" y="70" width="584" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="cYj-0y-xzk"/>
+                    </constraints>
+                    <state key="normal" title="扫描">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="scan:" destination="-1" eventType="touchUpInside" id="kwI-yq-558"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6xc-RW-hTx">
+                    <rect key="frame" x="0.0" y="128" width="600" height="472"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KG2-yw-Jgh" secondAttribute="trailing" constant="8" id="0hU-2Y-U8x"/>
+                <constraint firstItem="6xc-RW-hTx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="21M-gH-HRR"/>
+                <constraint firstItem="KG2-yw-Jgh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="JHM-KE-nEC"/>
+                <constraint firstAttribute="bottom" secondItem="6xc-RW-hTx" secondAttribute="bottom" id="YgQ-tX-5wS"/>
+                <constraint firstAttribute="trailing" secondItem="6xc-RW-hTx" secondAttribute="trailing" id="Zk0-5e-CPt"/>
+                <constraint firstItem="6xc-RW-hTx" firstAttribute="top" secondItem="KG2-yw-Jgh" secondAttribute="bottom" constant="8" id="kGR-eS-IZT"/>
+                <constraint firstItem="KG2-yw-Jgh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="pXN-XH-kes"/>
+            </constraints>
+            <point key="canvasLocation" x="375" y="273"/>
+        </view>
+    </objects>
+</document>

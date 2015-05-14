@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LVTouchIdViewController.h"
+#import "LVBlueToothViewController.h"
 
 
 
@@ -93,7 +94,8 @@
 #pragma mark - 蓝牙设备扫描检测演示
 - (void)blueToothDemo {
 
-
+    LVBlueToothViewController *blueToothVc = [[LVBlueToothViewController alloc] init];
+    [self.navigationController pushViewController:blueToothVc animated:YES];
 
 }
 
