@@ -60,6 +60,7 @@
     
 }
 
+#pragma mark - UITableViewDatasource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.peripherals.count;
 }
@@ -80,7 +81,7 @@
     return cell;
 }
 
-
+#pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -162,11 +163,11 @@
  *
  */
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
-    NSLog(@"5 === %@", peripheral);
+//    NSLog(@"5 === %@", peripheral);
     
     if (![self.peripherals containsObject:peripheral]) {
         [self.peripherals addObject:peripheral];
-//        [self.tableView reloadData];
+        
         [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
     }
 }
