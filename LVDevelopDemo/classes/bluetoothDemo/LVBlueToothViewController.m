@@ -38,7 +38,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.scanBtn.layer.cornerRadius = 10;
+    self.scanBtn.layer.cornerRadius = 20;
     
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
     

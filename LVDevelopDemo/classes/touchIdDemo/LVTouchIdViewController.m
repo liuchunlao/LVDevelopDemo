@@ -29,7 +29,11 @@
     [super viewDidLoad];
 
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    btn.frame = CGRectMake(100, 100, 200, 40);
+    [btn setTitle:@"开启指纹识别" forState:UIControlStateNormal];
+    btn.width = self.view.width;
+    btn.height = 50;
+    btn.x = 0;
+    btn.y = 100;
     btn.backgroundColor = [UIColor greenColor];
     btn.layer.cornerRadius = 20;
     [self.view addSubview:btn];

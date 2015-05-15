@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LVOpenFlashViewController">
+            <connections>
+                <outlet property="closeBtn" destination="fQk-w8-10f" id="vmn-xd-Vg4"/>
+                <outlet property="openBtn" destination="8sX-L2-zAp" id="dWB-L1-iEP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sX-L2-zAp">
+                    <rect key="frame" x="8" y="70" width="584" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="IhS-uw-Fkt"/>
+                    </constraints>
+                    <state key="normal" title="打开闪光灯">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="open:" destination="-1" eventType="touchUpInside" id="k4x-bL-S8T"/>
+                    </connections>
+                </button>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQk-w8-10f">
+                    <rect key="frame" x="8" y="133" width="584" height="50"/>
+                    <color key="backgroundColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="关闭闪光灯">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="rmV-Zx-qW5"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="调节闪光灯亮度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVt-7c-bEM">
+                    <rect key="frame" x="8" y="215" width="584" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JN8-un-Kba">
+                    <rect key="frame" x="6" y="273" width="588" height="31"/>
+                    <connections>
+                        <action selector="changeFlashValue:" destination="-1" eventType="valueChanged" id="A9C-aE-xFD"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8sX-L2-zAp" secondAttribute="trailing" constant="8" id="1bC-TX-vH8"/>
+                <constraint firstItem="bVt-7c-bEM" firstAttribute="leading" secondItem="JN8-un-Kba" secondAttribute="leading" id="6Cg-1x-jWs"/>
+                <constraint firstItem="bVt-7c-bEM" firstAttribute="trailing" secondItem="JN8-un-Kba" secondAttribute="trailing" id="LsL-OE-Lm6"/>
+                <constraint firstItem="8sX-L2-zAp" firstAttribute="leading" secondItem="fQk-w8-10f" secondAttribute="leading" id="MRs-y6-avl"/>
+                <constraint firstItem="8sX-L2-zAp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="TNm-WK-HG0"/>
+                <constraint firstItem="bVt-7c-bEM" firstAttribute="leading" secondItem="fQk-w8-10f" secondAttribute="leading" id="Te9-XL-Ena"/>
+                <constraint firstItem="8sX-L2-zAp" firstAttribute="height" secondItem="fQk-w8-10f" secondAttribute="height" id="Ycf-xt-fax"/>
+                <constraint firstItem="fQk-w8-10f" firstAttribute="top" secondItem="8sX-L2-zAp" secondAttribute="bottom" constant="13" id="hq1-bc-CCi"/>
+                <constraint firstItem="8sX-L2-zAp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="ntZ-Ui-jSH"/>
+                <constraint firstItem="bVt-7c-bEM" firstAttribute="top" secondItem="fQk-w8-10f" secondAttribute="bottom" constant="32" id="oi5-fT-OWf"/>
+                <constraint firstItem="bVt-7c-bEM" firstAttribute="trailing" secondItem="fQk-w8-10f" secondAttribute="trailing" id="p1L-uD-eRq"/>
+                <constraint firstItem="bVt-7c-bEM" firstAttribute="height" secondItem="fQk-w8-10f" secondAttribute="height" id="rdw-g9-7W6"/>
+                <constraint firstItem="8sX-L2-zAp" firstAttribute="trailing" secondItem="fQk-w8-10f" secondAttribute="trailing" id="sB2-pS-I9a"/>
+                <constraint firstItem="JN8-un-Kba" firstAttribute="top" secondItem="bVt-7c-bEM" secondAttribute="bottom" constant="8" id="w2B-qm-WuI"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

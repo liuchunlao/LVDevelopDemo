@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "LVTouchIdViewController.h"
 #import "LVBlueToothViewController.h"
-
+#import "LVOpenFlashViewController.h"
 
 
 
@@ -103,6 +103,8 @@
 #pragma mark - 打开闪光灯
 - (void)openTheFlash {
     NSLog(@"打开闪光灯");
+    LVOpenFlashViewController *openFlashVc = [[LVOpenFlashViewController alloc] init];
+    [self.navigationController pushViewController:openFlashVc animated:YES];
 
 }
 

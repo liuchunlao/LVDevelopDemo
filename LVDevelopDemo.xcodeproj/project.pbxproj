@@ -23,6 +23,9 @@
 		12764AAA1AFC98590096002D /* LVDevelopDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12764AA91AFC98590096002D /* LVDevelopDemoTests.m */; };
 		12764AB81AFC9BA50096002D /* LVTouchIdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12764AB71AFC9BA50096002D /* LVTouchIdViewController.m */; };
 		12764ABA1AFC9BE10096002D /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12764AB91AFC9BE10096002D /* LocalAuthentication.framework */; };
+		12CD7B441B05D96D00F9EE4D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD7B431B05D96D00F9EE4D /* UIView+Extension.m */; };
+		12CD7B481B05DA9C00F9EE4D /* LVOpenFlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD7B461B05DA9C00F9EE4D /* LVOpenFlashViewController.m */; };
+		12CD7B491B05DA9C00F9EE4D /* LVOpenFlashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12CD7B471B05DA9C00F9EE4D /* LVOpenFlashViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,11 @@
 		12764AB61AFC9BA50096002D /* LVTouchIdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVTouchIdViewController.h; sourceTree = "<group>"; };
 		12764AB71AFC9BA50096002D /* LVTouchIdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVTouchIdViewController.m; sourceTree = "<group>"; };
 		12764AB91AFC9BE10096002D /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		12CD7B421B05D96D00F9EE4D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		12CD7B431B05D96D00F9EE4D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		12CD7B451B05DA9C00F9EE4D /* LVOpenFlashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVOpenFlashViewController.h; sourceTree = "<group>"; };
+		12CD7B461B05DA9C00F9EE4D /* LVOpenFlashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVOpenFlashViewController.m; sourceTree = "<group>"; };
+		12CD7B471B05DA9C00F9EE4D /* LVOpenFlashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LVOpenFlashViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,9 @@
 		124EB4061B04A4C600C89BA7 /* openFlash */ = {
 			isa = PBXGroup;
 			children = (
+				12CD7B451B05DA9C00F9EE4D /* LVOpenFlashViewController.h */,
+				12CD7B461B05DA9C00F9EE4D /* LVOpenFlashViewController.m */,
+				12CD7B471B05DA9C00F9EE4D /* LVOpenFlashViewController.xib */,
 			);
 			path = openFlash;
 			sourceTree = "<group>";
@@ -139,6 +150,7 @@
 		12764A8C1AFC98590096002D /* LVDevelopDemo */ = {
 			isa = PBXGroup;
 			children = (
+				12CD7B411B05D96D00F9EE4D /* UIViewExtension */,
 				124EB3FD1B04A3E500C89BA7 /* MBProgressHUD */,
 				12764AB31AFC9B1E0096002D /* classes */,
 				12764A911AFC98590096002D /* AppDelegate.h */,
@@ -197,6 +209,15 @@
 				12764AB71AFC9BA50096002D /* LVTouchIdViewController.m */,
 			);
 			path = touchIdDemo;
+			sourceTree = "<group>";
+		};
+		12CD7B411B05D96D00F9EE4D /* UIViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				12CD7B421B05D96D00F9EE4D /* UIView+Extension.h */,
+				12CD7B431B05D96D00F9EE4D /* UIView+Extension.m */,
+			);
+			path = UIViewExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +303,7 @@
 			files = (
 				12764A991AFC98590096002D /* Main.storyboard in Resources */,
 				124EB3FC1B04A2D500C89BA7 /* LVInfoViewController.xib in Resources */,
+				12CD7B491B05DA9C00F9EE4D /* LVOpenFlashViewController.xib in Resources */,
 				124EB3F71B04942700C89BA7 /* LVBlueToothViewController.xib in Resources */,
 				12764A9E1AFC98590096002D /* LaunchScreen.xib in Resources */,
 				12764A9B1AFC98590096002D /* Images.xcassets in Resources */,
@@ -303,6 +325,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12CD7B441B05D96D00F9EE4D /* UIView+Extension.m in Sources */,
+				12CD7B481B05DA9C00F9EE4D /* LVOpenFlashViewController.m in Sources */,
 				124EB3FB1B04A2D500C89BA7 /* LVInfoViewController.m in Sources */,
 				124EB3F61B04942700C89BA7 /* LVBlueToothViewController.m in Sources */,
 				12764A961AFC98590096002D /* ViewController.m in Sources */,
