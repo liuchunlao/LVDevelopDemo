@@ -23,6 +23,9 @@
 		12764AAA1AFC98590096002D /* LVDevelopDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12764AA91AFC98590096002D /* LVDevelopDemoTests.m */; };
 		12764AB81AFC9BA50096002D /* LVTouchIdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12764AB71AFC9BA50096002D /* LVTouchIdViewController.m */; };
 		12764ABA1AFC9BE10096002D /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12764AB91AFC9BE10096002D /* LocalAuthentication.framework */; };
+		129C4DFF1B1EF056001253AA /* LVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 129C4DFD1B1EF056001253AA /* LVViewController.m */; };
+		129C4E001B1EF056001253AA /* LVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129C4DFE1B1EF056001253AA /* LVViewController.xib */; };
+		129C4E031B1EF77B001253AA /* LVEncryptionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 129C4E021B1EF77B001253AA /* LVEncryptionTool.m */; };
 		12CD7B441B05D96D00F9EE4D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD7B431B05D96D00F9EE4D /* UIView+Extension.m */; };
 		12CD7B481B05DA9C00F9EE4D /* LVOpenFlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD7B461B05DA9C00F9EE4D /* LVOpenFlashViewController.m */; };
 		12CD7B491B05DA9C00F9EE4D /* LVOpenFlashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12CD7B471B05DA9C00F9EE4D /* LVOpenFlashViewController.xib */; };
@@ -67,6 +70,11 @@
 		12764AB61AFC9BA50096002D /* LVTouchIdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVTouchIdViewController.h; sourceTree = "<group>"; };
 		12764AB71AFC9BA50096002D /* LVTouchIdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVTouchIdViewController.m; sourceTree = "<group>"; };
 		12764AB91AFC9BE10096002D /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		129C4DFC1B1EF056001253AA /* LVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVViewController.h; sourceTree = "<group>"; };
+		129C4DFD1B1EF056001253AA /* LVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVViewController.m; sourceTree = "<group>"; };
+		129C4DFE1B1EF056001253AA /* LVViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LVViewController.xib; sourceTree = "<group>"; };
+		129C4E011B1EF77B001253AA /* LVEncryptionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVEncryptionTool.h; sourceTree = "<group>"; };
+		129C4E021B1EF77B001253AA /* LVEncryptionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVEncryptionTool.m; sourceTree = "<group>"; };
 		12CD7B421B05D96D00F9EE4D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		12CD7B431B05D96D00F9EE4D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		12CD7B451B05DA9C00F9EE4D /* LVOpenFlashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVOpenFlashViewController.h; sourceTree = "<group>"; };
@@ -195,6 +203,7 @@
 		12764AB31AFC9B1E0096002D /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				129C4DFB1B1EF034001253AA /* AesEncryption */,
 				124EB4061B04A4C600C89BA7 /* openFlash */,
 				124EB3F21B0493FB00C89BA7 /* bluetoothDemo */,
 				12764AB51AFC9B530096002D /* touchIdDemo */,
@@ -209,6 +218,18 @@
 				12764AB71AFC9BA50096002D /* LVTouchIdViewController.m */,
 			);
 			path = touchIdDemo;
+			sourceTree = "<group>";
+		};
+		129C4DFB1B1EF034001253AA /* AesEncryption */ = {
+			isa = PBXGroup;
+			children = (
+				129C4DFC1B1EF056001253AA /* LVViewController.h */,
+				129C4DFD1B1EF056001253AA /* LVViewController.m */,
+				129C4DFE1B1EF056001253AA /* LVViewController.xib */,
+				129C4E011B1EF77B001253AA /* LVEncryptionTool.h */,
+				129C4E021B1EF77B001253AA /* LVEncryptionTool.m */,
+			);
+			path = AesEncryption;
 			sourceTree = "<group>";
 		};
 		12CD7B411B05D96D00F9EE4D /* UIViewExtension */ = {
@@ -307,6 +328,7 @@
 				124EB3F71B04942700C89BA7 /* LVBlueToothViewController.xib in Resources */,
 				12764A9E1AFC98590096002D /* LaunchScreen.xib in Resources */,
 				12764A9B1AFC98590096002D /* Images.xcassets in Resources */,
+				129C4E001B1EF056001253AA /* LVViewController.xib in Resources */,
 				124EB4041B04A3E600C89BA7 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,11 +349,13 @@
 			files = (
 				12CD7B441B05D96D00F9EE4D /* UIView+Extension.m in Sources */,
 				12CD7B481B05DA9C00F9EE4D /* LVOpenFlashViewController.m in Sources */,
+				129C4DFF1B1EF056001253AA /* LVViewController.m in Sources */,
 				124EB3FB1B04A2D500C89BA7 /* LVInfoViewController.m in Sources */,
 				124EB3F61B04942700C89BA7 /* LVBlueToothViewController.m in Sources */,
 				12764A961AFC98590096002D /* ViewController.m in Sources */,
 				12764AB81AFC9BA50096002D /* LVTouchIdViewController.m in Sources */,
 				124EB4031B04A3E600C89BA7 /* MBProgressHUD+MJ.m in Sources */,
+				129C4E031B1EF77B001253AA /* LVEncryptionTool.m in Sources */,
 				12764A931AFC98590096002D /* AppDelegate.m in Sources */,
 				12764A901AFC98590096002D /* main.m in Sources */,
 				124EB4051B04A3E600C89BA7 /* MBProgressHUD.m in Sources */,

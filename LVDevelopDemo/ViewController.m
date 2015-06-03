@@ -10,6 +10,7 @@
 #import "LVTouchIdViewController.h"
 #import "LVBlueToothViewController.h"
 #import "LVOpenFlashViewController.h"
+#import "LVViewController.h"
 
 
 
@@ -26,7 +27,7 @@
 
 - (NSArray *)funcArr {
     if (!_funcArr) {
-        _funcArr = @[@"指纹识别", @"蓝牙设备扫描、连接", @"打开闪光灯"];
+        _funcArr = @[@"指纹识别", @"蓝牙设备扫描、连接", @"打开闪光灯", @"AES加密"];
     }
     return _funcArr;
 }
@@ -77,6 +78,12 @@
             break;
         case 2:
             [self openTheFlash];
+            
+        case 3:
+#pragma mark - AES加密
+//            [self advancedEncryption];
+            [self.navigationController pushViewController:[[LVViewController alloc] init] animated:YES];
+            
             
         default:
             break;

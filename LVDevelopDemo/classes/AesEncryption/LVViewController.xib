@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LVViewController">
+            <connections>
+                <outlet property="cipherField" destination="dRB-8o-nSf" id="wpj-Z6-TQr"/>
+                <outlet property="keyField" destination="J4c-uN-Vem" id="iw0-Bo-GV1"/>
+                <outlet property="valueLabel" destination="eiU-Si-cp2" id="y8O-nM-n8Q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY 密钥" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKY-Vy-wyJ">
+                    <rect key="frame" x="13" y="72" width="72" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入需要加密的内容" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dRB-8o-nSf">
+                    <rect key="frame" x="152" y="112" width="440" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cipher 加密内容" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axn-x5-3dj">
+                    <rect key="frame" x="13" y="117" width="121" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOr-XV-ude">
+                    <rect key="frame" x="13" y="165" width="579" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="eny-qt-yZy"/>
+                    </constraints>
+                    <state key="normal" title="加密">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="encryption" destination="-1" eventType="touchUpInside" id="nZx-5c-mwz"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密钥" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J4c-uN-Vem">
+                    <rect key="frame" x="152" y="68" width="440" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UO8-Id-8aY">
+                    <rect key="frame" x="13" y="240" width="579" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="解密">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="decryption" destination="-1" eventType="touchUpInside" id="idR-uF-WJS"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="解密后的内容" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiU-Si-cp2">
+                    <rect key="frame" x="13" y="292" width="579" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="pst-NS-Rne"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eiU-Si-cp2" firstAttribute="top" secondItem="UO8-Id-8aY" secondAttribute="bottom" constant="22" id="5dC-F0-Oxg"/>
+                <constraint firstItem="JOr-XV-ude" firstAttribute="centerX" secondItem="UO8-Id-8aY" secondAttribute="centerX" id="6lf-sf-z20"/>
+                <constraint firstItem="J4c-uN-Vem" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="Bzt-c2-5Kl"/>
+                <constraint firstItem="JOr-XV-ude" firstAttribute="leading" secondItem="Axn-x5-3dj" secondAttribute="leading" id="D8U-Re-aro"/>
+                <constraint firstItem="UO8-Id-8aY" firstAttribute="top" secondItem="JOr-XV-ude" secondAttribute="bottom" constant="45" id="GgS-c3-whe"/>
+                <constraint firstItem="Axn-x5-3dj" firstAttribute="top" secondItem="xKY-Vy-wyJ" secondAttribute="bottom" constant="24" id="MeI-2p-zR9"/>
+                <constraint firstAttribute="trailing" secondItem="J4c-uN-Vem" secondAttribute="trailing" constant="8" id="OM1-in-EiT"/>
+                <constraint firstItem="eiU-Si-cp2" firstAttribute="width" secondItem="UO8-Id-8aY" secondAttribute="width" id="XEs-IC-55L"/>
+                <constraint firstItem="dRB-8o-nSf" firstAttribute="trailing" secondItem="J4c-uN-Vem" secondAttribute="trailing" id="Xdz-5Y-TJi"/>
+                <constraint firstItem="JOr-XV-ude" firstAttribute="trailing" secondItem="dRB-8o-nSf" secondAttribute="trailing" id="arW-pd-EOP"/>
+                <constraint firstItem="eiU-Si-cp2" firstAttribute="centerX" secondItem="UO8-Id-8aY" secondAttribute="centerX" id="bpz-uu-e82"/>
+                <constraint firstItem="JOr-XV-ude" firstAttribute="trailing" secondItem="UO8-Id-8aY" secondAttribute="trailing" id="gDv-iT-Yc6"/>
+                <constraint firstItem="dRB-8o-nSf" firstAttribute="top" secondItem="J4c-uN-Vem" secondAttribute="bottom" constant="14" id="gXW-HC-iAs"/>
+                <constraint firstItem="JOr-XV-ude" firstAttribute="height" secondItem="UO8-Id-8aY" secondAttribute="height" id="ivn-Bw-dJ1"/>
+                <constraint firstItem="JOr-XV-ude" firstAttribute="leading" secondItem="dRB-8o-nSf" secondAttribute="leading" constant="-139" id="jBb-xT-ndj"/>
+                <constraint firstItem="dRB-8o-nSf" firstAttribute="height" secondItem="J4c-uN-Vem" secondAttribute="height" id="kg5-0a-QVW"/>
+                <constraint firstItem="dRB-8o-nSf" firstAttribute="width" secondItem="J4c-uN-Vem" secondAttribute="width" id="lQk-qe-RLK"/>
+                <constraint firstItem="J4c-uN-Vem" firstAttribute="leading" secondItem="xKY-Vy-wyJ" secondAttribute="trailing" constant="67" id="nWA-Kj-hvI"/>
+                <constraint firstItem="JOr-XV-ude" firstAttribute="top" secondItem="dRB-8o-nSf" secondAttribute="bottom" constant="23" id="ouJ-PD-jHv"/>
+                <constraint firstItem="xKY-Vy-wyJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="pPW-gS-lzb"/>
+                <constraint firstItem="xKY-Vy-wyJ" firstAttribute="leading" secondItem="Axn-x5-3dj" secondAttribute="leading" id="sJ6-As-tVl"/>
+                <constraint firstItem="xKY-Vy-wyJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="sJi-bB-IhH"/>
+                <constraint firstItem="eiU-Si-cp2" firstAttribute="top" secondItem="UO8-Id-8aY" secondAttribute="top" constant="52" id="se8-1Z-9uY"/>
+                <constraint firstItem="JOr-XV-ude" firstAttribute="width" secondItem="UO8-Id-8aY" secondAttribute="width" id="zMe-SL-SCj"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
