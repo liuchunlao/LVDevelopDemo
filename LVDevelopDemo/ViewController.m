@@ -78,12 +78,11 @@
             break;
         case 2:
             [self openTheFlash];
-            
+            break;
         case 3:
 #pragma mark - AES加密
-//            [self advancedEncryption];
             [self.navigationController pushViewController:[[LVViewController alloc] init] animated:YES];
-            
+            break;
             
         default:
             break;
