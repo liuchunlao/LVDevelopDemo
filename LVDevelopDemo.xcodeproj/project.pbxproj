@@ -29,6 +29,7 @@
 		12CD7B441B05D96D00F9EE4D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD7B431B05D96D00F9EE4D /* UIView+Extension.m */; };
 		12CD7B481B05DA9C00F9EE4D /* LVOpenFlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD7B461B05DA9C00F9EE4D /* LVOpenFlashViewController.m */; };
 		12CD7B491B05DA9C00F9EE4D /* LVOpenFlashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12CD7B471B05DA9C00F9EE4D /* LVOpenFlashViewController.xib */; };
+		D94428FA1B3E63B400104000 /* LVDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94428F91B3E63B400104000 /* LVDragViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		12CD7B451B05DA9C00F9EE4D /* LVOpenFlashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVOpenFlashViewController.h; sourceTree = "<group>"; };
 		12CD7B461B05DA9C00F9EE4D /* LVOpenFlashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVOpenFlashViewController.m; sourceTree = "<group>"; };
 		12CD7B471B05DA9C00F9EE4D /* LVOpenFlashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LVOpenFlashViewController.xib; sourceTree = "<group>"; };
+		D94428F81B3E63B400104000 /* LVDragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDragViewController.h; sourceTree = "<group>"; };
+		D94428F91B3E63B400104000 /* LVDragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDragViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +210,7 @@
 				124EB4061B04A4C600C89BA7 /* openFlash */,
 				124EB3F21B0493FB00C89BA7 /* bluetoothDemo */,
 				12764AB51AFC9B530096002D /* touchIdDemo */,
+				D94428F71B3E637500104000 /* dragDown */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -239,6 +243,15 @@
 				12CD7B431B05D96D00F9EE4D /* UIView+Extension.m */,
 			);
 			path = UIViewExtension;
+			sourceTree = "<group>";
+		};
+		D94428F71B3E637500104000 /* dragDown */ = {
+			isa = PBXGroup;
+			children = (
+				D94428F81B3E63B400104000 /* LVDragViewController.h */,
+				D94428F91B3E63B400104000 /* LVDragViewController.m */,
+			);
+			path = dragDown;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +368,7 @@
 				12764A961AFC98590096002D /* ViewController.m in Sources */,
 				12764AB81AFC9BA50096002D /* LVTouchIdViewController.m in Sources */,
 				124EB4031B04A3E600C89BA7 /* MBProgressHUD+MJ.m in Sources */,
+				D94428FA1B3E63B400104000 /* LVDragViewController.m in Sources */,
 				129C4E031B1EF77B001253AA /* LVEncryptionTool.m in Sources */,
 				12764A931AFC98590096002D /* AppDelegate.m in Sources */,
 				12764A901AFC98590096002D /* main.m in Sources */,
@@ -488,6 +502,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = LVDevelopDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = LVDevelopDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -499,6 +514,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = LVDevelopDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = LVDevelopDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
