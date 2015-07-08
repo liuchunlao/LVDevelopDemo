@@ -13,4 +13,6 @@
 /** 蓝牙设备 */
 @property (nonatomic, strong) CBPeripheral *peripheral;
 
+@property (nonatomic, strong) CBCentralManager *manager;
+
 @end

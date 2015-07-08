@@ -59,6 +59,10 @@
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self.manager cancelPeripheralConnection:self.peripheral];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*!
