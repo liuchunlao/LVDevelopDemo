@@ -12,6 +12,7 @@
 #import "LVOpenFlashViewController.h"
 #import "LVViewController.h"
 #import "LVDragViewController.h"
+#import "LVSearchViewController.h"
 
 
 
@@ -28,7 +29,7 @@
 
 - (NSArray *)funcArr {
     if (!_funcArr) {
-        _funcArr = @[@"指纹识别", @"蓝牙设备扫描、连接", @"打开闪光灯", @"AES加密",@"下拉放大效果"];
+        _funcArr = @[@"指纹识别", @"蓝牙设备扫描、连接", @"打开闪光灯", @"AES加密",@"下拉放大效果", @"搜索框Demo"];
     }
     return _funcArr;
 }
@@ -87,6 +88,11 @@
 #pragma mark - 下拉放大
         case 4:
             [self.navigationController pushViewController:[[LVDragViewController alloc] init] animated:YES];
+            break;
+#pragma mark - 搜索框
+        case 5:
+            [self.navigationController pushViewController:[[LVSearchViewController alloc] init] animated:YES];
+            
             
         default:
             break;

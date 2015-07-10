@@ -31,6 +31,8 @@
 		12CD7B481B05DA9C00F9EE4D /* LVOpenFlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD7B461B05DA9C00F9EE4D /* LVOpenFlashViewController.m */; };
 		12CD7B491B05DA9C00F9EE4D /* LVOpenFlashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12CD7B471B05DA9C00F9EE4D /* LVOpenFlashViewController.xib */; };
 		D94428FA1B3E63B400104000 /* LVDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94428F91B3E63B400104000 /* LVDragViewController.m */; };
+		D9A676541B501A4F0087632F /* LVSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A676521B501A4F0087632F /* LVSearchViewController.m */; };
+		D9A676551B501A4F0087632F /* LVSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A676531B501A4F0087632F /* LVSearchViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,9 @@
 		12CD7B471B05DA9C00F9EE4D /* LVOpenFlashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LVOpenFlashViewController.xib; sourceTree = "<group>"; };
 		D94428F81B3E63B400104000 /* LVDragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDragViewController.h; sourceTree = "<group>"; };
 		D94428F91B3E63B400104000 /* LVDragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDragViewController.m; sourceTree = "<group>"; };
+		D9A676511B501A4F0087632F /* LVSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVSearchViewController.h; sourceTree = "<group>"; };
+		D9A676521B501A4F0087632F /* LVSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVSearchViewController.m; sourceTree = "<group>"; };
+		D9A676531B501A4F0087632F /* LVSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LVSearchViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +214,7 @@
 		12764AB31AFC9B1E0096002D /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				D9A676501B501A350087632F /* Search */,
 				129C4DFB1B1EF034001253AA /* AesEncryption */,
 				124EB4061B04A4C600C89BA7 /* openFlash */,
 				124EB3F21B0493FB00C89BA7 /* bluetoothDemo */,
@@ -255,6 +261,16 @@
 				D94428F91B3E63B400104000 /* LVDragViewController.m */,
 			);
 			path = dragDown;
+			sourceTree = "<group>";
+		};
+		D9A676501B501A350087632F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D9A676511B501A4F0087632F /* LVSearchViewController.h */,
+				D9A676521B501A4F0087632F /* LVSearchViewController.m */,
+				D9A676531B501A4F0087632F /* LVSearchViewController.xib */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +358,7 @@
 				124EB3FC1B04A2D500C89BA7 /* LVInfoViewController.xib in Resources */,
 				12CD7B491B05DA9C00F9EE4D /* LVOpenFlashViewController.xib in Resources */,
 				124EB3F71B04942700C89BA7 /* LVBlueToothViewController.xib in Resources */,
+				D9A676551B501A4F0087632F /* LVSearchViewController.xib in Resources */,
 				12764A9E1AFC98590096002D /* LaunchScreen.xib in Resources */,
 				12764A9B1AFC98590096002D /* Images.xcassets in Resources */,
 				129C4E001B1EF056001253AA /* LVViewController.xib in Resources */,
@@ -372,6 +389,7 @@
 				12764A961AFC98590096002D /* ViewController.m in Sources */,
 				12764AB81AFC9BA50096002D /* LVTouchIdViewController.m in Sources */,
 				124EB4031B04A3E600C89BA7 /* MBProgressHUD+MJ.m in Sources */,
+				D9A676541B501A4F0087632F /* LVSearchViewController.m in Sources */,
 				D94428FA1B3E63B400104000 /* LVDragViewController.m in Sources */,
 				129C4E031B1EF77B001253AA /* LVEncryptionTool.m in Sources */,
 				12764A931AFC98590096002D /* AppDelegate.m in Sources */,
