@@ -33,7 +33,7 @@
     
 }
 
-
+#pragma mark - UISearchBarDelegate
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
     // 1.显示导航栏
     [self.navigationController setNavigationBarHidden:YES animated:YES];
@@ -66,8 +66,15 @@
     [searchBar resignFirstResponder];
 }
 
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"开始搜索%@", searchBar.text);
+}
+
 
 - (IBAction)coverClick:(UIButton *)sender {
     [self.searchBar resignFirstResponder];
 }
+
+
+
 @end

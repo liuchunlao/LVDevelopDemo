@@ -40,10 +40,15 @@
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
     tableView.tableFooterView = [[UIView alloc] init];
-    [self.view addSubview:tableView];
-    self.tableView = tableView;
     tableView.delegate = self;
     tableView.dataSource = self;
+    
+    tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    tableView.layoutMargins = UIEdgeInsetsZero;
+    
+    [self.view addSubview:tableView];
+    self.tableView = tableView;
+    
 
 }
 
@@ -59,7 +64,8 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
     }
-    
+//    cell.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    cell.layoutMargins = UIEdgeInsetsZero;
     cell.textLabel.text = self.funcArr[indexPath.row];
     
     return cell;
