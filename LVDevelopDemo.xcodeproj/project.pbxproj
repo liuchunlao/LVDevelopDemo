@@ -27,6 +27,7 @@
 		129C4E001B1EF056001253AA /* LVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129C4DFE1B1EF056001253AA /* LVViewController.xib */; };
 		129C4E031B1EF77B001253AA /* LVEncryptionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 129C4E021B1EF77B001253AA /* LVEncryptionTool.m */; };
 		12B81F791B4CCAF100593A34 /* LVBlutToothFile in Sources */ = {isa = PBXBuildFile; fileRef = 12B81F781B4CCAF100593A34 /* LVBlutToothFile */; };
+		12BE8D1C1B61D08C004C4AC4 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BE8D1B1B61D08C004C4AC4 /* UINavigationBar+Awesome.m */; };
 		12CD7B441B05D96D00F9EE4D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD7B431B05D96D00F9EE4D /* UIView+Extension.m */; };
 		12CD7B481B05DA9C00F9EE4D /* LVOpenFlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD7B461B05DA9C00F9EE4D /* LVOpenFlashViewController.m */; };
 		12CD7B491B05DA9C00F9EE4D /* LVOpenFlashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12CD7B471B05DA9C00F9EE4D /* LVOpenFlashViewController.xib */; };
@@ -80,6 +81,8 @@
 		129C4E011B1EF77B001253AA /* LVEncryptionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVEncryptionTool.h; sourceTree = "<group>"; };
 		129C4E021B1EF77B001253AA /* LVEncryptionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVEncryptionTool.m; sourceTree = "<group>"; };
 		12B81F781B4CCAF100593A34 /* LVBlutToothFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LVBlutToothFile; sourceTree = "<group>"; };
+		12BE8D1A1B61D08C004C4AC4 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		12BE8D1B1B61D08C004C4AC4 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		12CD7B421B05D96D00F9EE4D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		12CD7B431B05D96D00F9EE4D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		12CD7B451B05DA9C00F9EE4D /* LVOpenFlashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVOpenFlashViewController.h; sourceTree = "<group>"; };
@@ -257,6 +260,8 @@
 		D94428F71B3E637500104000 /* dragDown */ = {
 			isa = PBXGroup;
 			children = (
+				12BE8D1A1B61D08C004C4AC4 /* UINavigationBar+Awesome.h */,
+				12BE8D1B1B61D08C004C4AC4 /* UINavigationBar+Awesome.m */,
 				D94428F81B3E63B400104000 /* LVDragViewController.h */,
 				D94428F91B3E63B400104000 /* LVDragViewController.m */,
 			);
@@ -383,6 +388,7 @@
 				12CD7B441B05D96D00F9EE4D /* UIView+Extension.m in Sources */,
 				12B81F791B4CCAF100593A34 /* LVBlutToothFile in Sources */,
 				12CD7B481B05DA9C00F9EE4D /* LVOpenFlashViewController.m in Sources */,
+				12BE8D1C1B61D08C004C4AC4 /* UINavigationBar+Awesome.m in Sources */,
 				129C4DFF1B1EF056001253AA /* LVViewController.m in Sources */,
 				124EB3FB1B04A2D500C89BA7 /* LVInfoViewController.m in Sources */,
 				124EB3F61B04942700C89BA7 /* LVBlueToothViewController.m in Sources */,
