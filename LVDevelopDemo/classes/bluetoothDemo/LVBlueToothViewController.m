@@ -42,9 +42,6 @@
     
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
     
-//    NSDictionary *options = @{
-//                              CBCentralManagerOptionShowPowerAlertKey : [NSNumber numberWithBool:YES]
-//                              };
     CBCentralManager *manager = [[CBCentralManager alloc] initWithDelegate:self queue:queue];
     self.manager = manager;
     
