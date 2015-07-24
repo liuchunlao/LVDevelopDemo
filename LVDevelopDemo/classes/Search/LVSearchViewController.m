@@ -7,72 +7,85 @@
 //
 
 #import "LVSearchViewController.h"
+#import "LVSearchResultController.h"
 
-@interface LVSearchViewController () <UISearchBarDelegate>
-
-/** 搜索框 */
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@interface LVSearchViewController () <UISearchControllerDelegate, UITableViewDataSource, UITableViewDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-/** 遮盖 */
-@property (weak, nonatomic) IBOutlet UIButton *cover;
+@property (nonatomic, strong) UISearchController *searchVc;
 
-- (IBAction)coverClick:(UIButton *)sender;
+@property (nonatomic, strong) NSArray *dataArr;
 
 @end
 
 @implementation LVSearchViewController
 
+- (NSArray *)dataArr {
+    if (!_dataArr) {
+        _dataArr = @[@"1", @"2", @"123", @"sdfs", @"sdfafdassdfsd1213123f"];
+    }
+    return _dataArr;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.searchBar.delegate = self;
-    self.searchBar.tintColor = LVColor(32, 191, 179);
+    LVSearchResultController *resultVc = [[LVSearchResultController alloc] init];
+    resultVc.allData = self.dataArr;
     
+    self.searchVc = [[UISearchController alloc] initWithSearchResultsController:resultVc];
+
+    // 搜索框文字改变时会调用里面update方法
+    self.searchVc.searchResultsUpdater = resultVc;
+    
+    [self.searchVc.searchBar sizeToFit];
+    self.tableView.tableHeaderView = self.searchVc.searchBar;
+    
+    // 指定从当前控制器modal出来，否则就默认为跟控制器
+    self.definesPresentationContext = YES;
 }
 
-#pragma mark - UISearchBarDelegate
-- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
-    // 1.显示导航栏
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-    
-    // 2.隐藏搜索框右边的取消按钮
-    [searchBar setShowsCancelButton:YES animated:YES];
-    
-    // 3.显示遮盖
-    [UIView animateWithDuration:0.5 animations:^{
-        self.cover.alpha = 0.3;
-    }];
 
-}
+#pragma mark - UISearchControllerDelegate
+
+
+#pragma mark - UISearchResultsUpdating
+
+
 
 - (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
-    // 1.显示导航栏
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+//    // 1.显示导航栏
+//    [self.navigationController setNavigationBarHidden:NO animated:YES];
+//    
+//    // 2.隐藏搜索框右边的取消按钮
+//    [searchBar setShowsCancelButton:NO animated:YES];
+//    
+//    // 3.显示遮盖
+//    [UIView animateWithDuration:0.5 animations:^{
+//        self.cover.alpha = 0;
+//    }];
+//    searchBar.text = nil;
+}
+
+
+#pragma mark - UITableViewDatasource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataArr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *ID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if(!cell)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+    }
+    cell.textLabel.text = self.dataArr[indexPath.row];
     
-    // 2.隐藏搜索框右边的取消按钮
-    [searchBar setShowsCancelButton:NO animated:YES];
+    return cell;
     
-    // 3.显示遮盖
-    [UIView animateWithDuration:0.5 animations:^{
-        self.cover.alpha = 0;
-    }];
-    searchBar.text = nil;
-}
-
-- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
-    [searchBar resignFirstResponder];
-}
-
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-    NSLog(@"开始搜索%@", searchBar.text);
-}
-
-
-- (IBAction)coverClick:(UIButton *)sender {
-    [self.searchBar resignFirstResponder];
 }
 
 

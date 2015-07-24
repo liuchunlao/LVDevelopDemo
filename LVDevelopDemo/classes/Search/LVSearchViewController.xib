@@ -7,8 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LVSearchViewController">
             <connections>
-                <outlet property="cover" destination="tby-Rm-vW2" id="eiZ-7R-bKU"/>
-                <outlet property="searchBar" destination="bHt-2r-NOi" id="7Qn-La-SLm"/>
                 <outlet property="tableView" destination="75B-yX-yCc" id="UYm-54-lr7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,42 +16,21 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="bHt-2r-NOi">
-                    <rect key="frame" x="0.0" y="64" width="600" height="44"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="0ho-Cm-XUi"/>
-                    </constraints>
-                    <textInputTraits key="textInputTraits"/>
-                </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="75B-yX-yCc" userLabel="显示内容">
-                    <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tableView>
-                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tby-Rm-vW2">
-                    <rect key="frame" x="0.0" y="108" width="600" height="492"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
                     <connections>
-                        <action selector="coverClick:" destination="-1" eventType="touchUpInside" id="Xch-61-kAz"/>
+                        <outlet property="dataSource" destination="-1" id="Zf5-U7-LuG"/>
+                        <outlet property="delegate" destination="-1" id="g4q-6a-TgA"/>
                     </connections>
-                </button>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="tby-Rm-vW2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2TG-zp-8vc"/>
-                <constraint firstItem="75B-yX-yCc" firstAttribute="top" secondItem="bHt-2r-NOi" secondAttribute="bottom" id="9jb-B0-Q7x"/>
-                <constraint firstItem="bHt-2r-NOi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="BgX-Eo-lM7"/>
-                <constraint firstItem="bHt-2r-NOi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N7q-4F-98f"/>
-                <constraint firstItem="75B-yX-yCc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="REm-au-RCW"/>
-                <constraint firstAttribute="trailing" secondItem="tby-Rm-vW2" secondAttribute="trailing" id="T7L-Hg-08a"/>
-                <constraint firstAttribute="bottom" secondItem="tby-Rm-vW2" secondAttribute="bottom" id="Tnl-fk-p1p"/>
-                <constraint firstAttribute="trailing" secondItem="75B-yX-yCc" secondAttribute="trailing" id="Z95-CV-wZ3"/>
-                <constraint firstAttribute="centerX" secondItem="bHt-2r-NOi" secondAttribute="centerX" id="fKP-Zm-Kuy"/>
-                <constraint firstItem="tby-Rm-vW2" firstAttribute="top" secondItem="bHt-2r-NOi" secondAttribute="bottom" id="kRI-Dw-FRb"/>
-                <constraint firstAttribute="bottom" secondItem="75B-yX-yCc" secondAttribute="bottom" id="mRC-2h-BNI"/>
-                <constraint firstAttribute="trailing" secondItem="bHt-2r-NOi" secondAttribute="trailing" id="tXh-1Y-vxs"/>
+                <constraint firstAttribute="trailing" secondItem="75B-yX-yCc" secondAttribute="trailing" id="1c3-Bk-Z6J"/>
+                <constraint firstItem="75B-yX-yCc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7RV-Eo-L5m"/>
+                <constraint firstAttribute="bottom" secondItem="75B-yX-yCc" secondAttribute="bottom" id="gjA-tp-6AJ"/>
+                <constraint firstItem="75B-yX-yCc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iHS-Ux-LjR"/>
             </constraints>
         </view>
     </objects>
