@@ -32,14 +32,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 创建用来显示搜索结果的控制器
     LVSearchResultController *resultVc = [[LVSearchResultController alloc] init];
+    // 将所有的数据传过去
     resultVc.allData = self.dataArr;
     
+    // 搜索控制
     self.searchVc = [[UISearchController alloc] initWithSearchResultsController:resultVc];
 
     // 搜索框文字改变时会调用里面update方法
     self.searchVc.searchResultsUpdater = resultVc;
     
+    // 设置搜索框
     [self.searchVc.searchBar sizeToFit];
     self.tableView.tableHeaderView = self.searchVc.searchBar;
     
@@ -47,27 +51,6 @@
     self.definesPresentationContext = YES;
 }
 
-
-#pragma mark - UISearchControllerDelegate
-
-
-#pragma mark - UISearchResultsUpdating
-
-
-
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
-//    // 1.显示导航栏
-//    [self.navigationController setNavigationBarHidden:NO animated:YES];
-//    
-//    // 2.隐藏搜索框右边的取消按钮
-//    [searchBar setShowsCancelButton:NO animated:YES];
-//    
-//    // 3.显示遮盖
-//    [UIView animateWithDuration:0.5 animations:^{
-//        self.cover.alpha = 0;
-//    }];
-//    searchBar.text = nil;
-}
 
 
 #pragma mark - UITableViewDatasource

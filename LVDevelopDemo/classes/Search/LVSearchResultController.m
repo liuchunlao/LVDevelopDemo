@@ -23,25 +23,23 @@
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
 
-    NSLog(@"%@", searchController.searchBar.text);
+    // 需要搜索的内容
     NSString *text = searchController.searchBar.text;
-    NSLog(@"%@", text);
     if (text == nil) {
         return;
     }
     
+    // 预言、过滤得到需要的数据
     NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"self contains '%@'", text]];
     self.result = [self.allData filteredArrayUsingPredicate:predicate];
     
-    NSLog(@"self.result = %@", self.result);
-    
+    // 将搜索到结果显示到列表里面
     [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"%zd", self.result.count);
     return self.result.count;
 }
 
