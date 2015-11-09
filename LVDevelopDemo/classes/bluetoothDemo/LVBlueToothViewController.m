@@ -56,7 +56,7 @@
     [self.tableView reloadData];
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:false], CBCentralManagerScanOptionAllowDuplicatesKey, nil];
         
-    [self.manager retrieveConnectedPeripherals]; // 5.0 - 7.0
+//    [self.manager retrieveConnectedPeripherals]; // 5.0 - 7.0
 
     [self.manager scanForPeripheralsWithServices:nil options:dict];
 }

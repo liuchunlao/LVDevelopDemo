@@ -9,7 +9,7 @@
 #import "LVSearchViewController.h"
 #import "LVSearchResultController.h"
 
-@interface LVSearchViewController () <UISearchControllerDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface LVSearchViewController () <UISearchControllerDelegate, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -37,8 +37,10 @@
     // 将所有的数据传过去
     resultVc.allData = self.dataArr;
     
-    // 搜索控制
+    // 搜索控制器
     self.searchVc = [[UISearchController alloc] initWithSearchResultsController:resultVc];
+    
+    self.searchVc.searchBar.delegate = self;
 
     // 搜索框文字改变时会调用里面update方法
     self.searchVc.searchResultsUpdater = resultVc;
@@ -69,6 +71,12 @@
     
     return cell;
     
+}
+
+#pragma mark - UISearchBarDelegate
+// 点击了键盘的search按钮时调用
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"sdflsdjf");
 }
 
 
