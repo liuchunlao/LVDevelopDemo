@@ -19,7 +19,6 @@
 		12764A961AFC98590096002D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12764A951AFC98590096002D /* ViewController.m */; };
 		12764A991AFC98590096002D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12764A971AFC98590096002D /* Main.storyboard */; };
 		12764A9B1AFC98590096002D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12764A9A1AFC98590096002D /* Images.xcassets */; };
-		12764A9E1AFC98590096002D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12764A9C1AFC98590096002D /* LaunchScreen.xib */; };
 		12764AAA1AFC98590096002D /* LVDevelopDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12764AA91AFC98590096002D /* LVDevelopDemoTests.m */; };
 		12764AB81AFC9BA50096002D /* LVTouchIdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12764AB71AFC9BA50096002D /* LVTouchIdViewController.m */; };
 		12764ABA1AFC9BE10096002D /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12764AB91AFC9BE10096002D /* LocalAuthentication.framework */; };
@@ -69,7 +68,6 @@
 		12764A951AFC98590096002D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		12764A981AFC98590096002D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12764A9A1AFC98590096002D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		12764A9D1AFC98590096002D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		12764AA31AFC98590096002D /* LVDevelopDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LVDevelopDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12764AA81AFC98590096002D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12764AA91AFC98590096002D /* LVDevelopDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVDevelopDemoTests.m; sourceTree = "<group>"; };
@@ -184,7 +182,6 @@
 				12764A951AFC98590096002D /* ViewController.m */,
 				12764A971AFC98590096002D /* Main.storyboard */,
 				12764A9A1AFC98590096002D /* Images.xcassets */,
-				12764A9C1AFC98590096002D /* LaunchScreen.xib */,
 				12764A8D1AFC98590096002D /* Supporting Files */,
 			);
 			path = LVDevelopDemo;
@@ -369,7 +366,6 @@
 				12CD7B491B05DA9C00F9EE4D /* LVOpenFlashViewController.xib in Resources */,
 				124EB3F71B04942700C89BA7 /* LVBlueToothViewController.xib in Resources */,
 				D9A676551B501A4F0087632F /* LVSearchViewController.xib in Resources */,
-				12764A9E1AFC98590096002D /* LaunchScreen.xib in Resources */,
 				12764A9B1AFC98590096002D /* Images.xcassets in Resources */,
 				129C4E001B1EF056001253AA /* LVViewController.xib in Resources */,
 				124EB4041B04A3E600C89BA7 /* MBProgressHUD.bundle in Resources */,
@@ -435,14 +431,6 @@
 				12764A981AFC98590096002D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		12764A9C1AFC98590096002D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				12764A9D1AFC98590096002D /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -537,7 +525,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				GCC_PREFIX_HEADER = LVDevelopDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = LVDevelopDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -550,7 +538,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				GCC_PREFIX_HEADER = LVDevelopDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = LVDevelopDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
