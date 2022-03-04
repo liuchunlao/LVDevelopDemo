@@ -31,6 +31,11 @@
 		12CD7B441B05D96D00F9EE4D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD7B431B05D96D00F9EE4D /* UIView+Extension.m */; };
 		12CD7B481B05DA9C00F9EE4D /* LVOpenFlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD7B461B05DA9C00F9EE4D /* LVOpenFlashViewController.m */; };
 		12CD7B491B05DA9C00F9EE4D /* LVOpenFlashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12CD7B471B05DA9C00F9EE4D /* LVOpenFlashViewController.xib */; };
+		A148D98C27D1AE48003A9370 /* LVSortController.m in Sources */ = {isa = PBXBuildFile; fileRef = A148D98B27D1AE48003A9370 /* LVSortController.m */; };
+		A148D99027D1E93B003A9370 /* LVBubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A148D98F27D1E93A003A9370 /* LVBubbleSort.m */; };
+		A148D99327D1F5D1003A9370 /* LVSelectionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A148D99227D1F5D1003A9370 /* LVSelectionSort.m */; };
+		A148D99827D202AB003A9370 /* LVInsertSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A148D99727D202AB003A9370 /* LVInsertSort.m */; };
+		A148D99C27D20587003A9370 /* LVBinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = A148D99B27D20587003A9370 /* LVBinarySearch.m */; };
 		D94428FA1B3E63B400104000 /* LVDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94428F91B3E63B400104000 /* LVDragViewController.m */; };
 		D9A676541B501A4F0087632F /* LVSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A676521B501A4F0087632F /* LVSearchViewController.m */; };
 		D9A676551B501A4F0087632F /* LVSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A676531B501A4F0087632F /* LVSearchViewController.xib */; };
@@ -89,6 +94,16 @@
 		12CD7B451B05DA9C00F9EE4D /* LVOpenFlashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVOpenFlashViewController.h; sourceTree = "<group>"; };
 		12CD7B461B05DA9C00F9EE4D /* LVOpenFlashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVOpenFlashViewController.m; sourceTree = "<group>"; };
 		12CD7B471B05DA9C00F9EE4D /* LVOpenFlashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LVOpenFlashViewController.xib; sourceTree = "<group>"; };
+		A148D98A27D1AE48003A9370 /* LVSortController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVSortController.h; sourceTree = "<group>"; };
+		A148D98B27D1AE48003A9370 /* LVSortController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVSortController.m; sourceTree = "<group>"; };
+		A148D98E27D1E93A003A9370 /* LVBubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVBubbleSort.h; sourceTree = "<group>"; };
+		A148D98F27D1E93A003A9370 /* LVBubbleSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVBubbleSort.m; sourceTree = "<group>"; };
+		A148D99127D1F5D1003A9370 /* LVSelectionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVSelectionSort.h; sourceTree = "<group>"; };
+		A148D99227D1F5D1003A9370 /* LVSelectionSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVSelectionSort.m; sourceTree = "<group>"; };
+		A148D99627D202AB003A9370 /* LVInsertSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVInsertSort.h; sourceTree = "<group>"; };
+		A148D99727D202AB003A9370 /* LVInsertSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVInsertSort.m; sourceTree = "<group>"; };
+		A148D99A27D20587003A9370 /* LVBinarySearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVBinarySearch.h; sourceTree = "<group>"; };
+		A148D99B27D20587003A9370 /* LVBinarySearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVBinarySearch.m; sourceTree = "<group>"; };
 		D94428F81B3E63B400104000 /* LVDragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDragViewController.h; sourceTree = "<group>"; };
 		D94428F91B3E63B400104000 /* LVDragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDragViewController.m; sourceTree = "<group>"; };
 		D9A676511B501A4F0087632F /* LVSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVSearchViewController.h; sourceTree = "<group>"; };
@@ -217,6 +232,7 @@
 		12764AB31AFC9B1E0096002D /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				A148D98927D1AE24003A9370 /* Sort */,
 				D9A676501B501A350087632F /* Search */,
 				129C4DFB1B1EF034001253AA /* AesEncryption */,
 				124EB4061B04A4C600C89BA7 /* openFlash */,
@@ -255,6 +271,55 @@
 				12CD7B431B05D96D00F9EE4D /* UIView+Extension.m */,
 			);
 			path = UIViewExtension;
+			sourceTree = "<group>";
+		};
+		A148D98927D1AE24003A9370 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				A148D99927D20577003A9370 /* BinarySearch */,
+				A148D99527D202A0003A9370 /* InserSort */,
+				A148D99427D20292003A9370 /* SelectionSort */,
+				A148D98D27D1E927003A9370 /* BubbleSort */,
+				A148D98A27D1AE48003A9370 /* LVSortController.h */,
+				A148D98B27D1AE48003A9370 /* LVSortController.m */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		A148D98D27D1E927003A9370 /* BubbleSort */ = {
+			isa = PBXGroup;
+			children = (
+				A148D98E27D1E93A003A9370 /* LVBubbleSort.h */,
+				A148D98F27D1E93A003A9370 /* LVBubbleSort.m */,
+			);
+			path = BubbleSort;
+			sourceTree = "<group>";
+		};
+		A148D99427D20292003A9370 /* SelectionSort */ = {
+			isa = PBXGroup;
+			children = (
+				A148D99127D1F5D1003A9370 /* LVSelectionSort.h */,
+				A148D99227D1F5D1003A9370 /* LVSelectionSort.m */,
+			);
+			path = SelectionSort;
+			sourceTree = "<group>";
+		};
+		A148D99527D202A0003A9370 /* InserSort */ = {
+			isa = PBXGroup;
+			children = (
+				A148D99627D202AB003A9370 /* LVInsertSort.h */,
+				A148D99727D202AB003A9370 /* LVInsertSort.m */,
+			);
+			path = InserSort;
+			sourceTree = "<group>";
+		};
+		A148D99927D20577003A9370 /* BinarySearch */ = {
+			isa = PBXGroup;
+			children = (
+				A148D99A27D20587003A9370 /* LVBinarySearch.h */,
+				A148D99B27D20587003A9370 /* LVBinarySearch.m */,
+			);
+			path = BinarySearch;
 			sourceTree = "<group>";
 		};
 		D94428F71B3E637500104000 /* dragDown */ = {
@@ -330,6 +395,7 @@
 				TargetAttributes = {
 					12764A891AFC98590096002D = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = N7CN8RKLZ7;
 					};
 					12764AA21AFC98590096002D = {
 						CreatedOnToolsVersion = 6.3;
@@ -342,6 +408,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -386,16 +453,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A148D99327D1F5D1003A9370 /* LVSelectionSort.m in Sources */,
 				12CD7B441B05D96D00F9EE4D /* UIView+Extension.m in Sources */,
+				A148D98C27D1AE48003A9370 /* LVSortController.m in Sources */,
 				12B81F791B4CCAF100593A34 /* LVBlutToothFile in Sources */,
+				A148D99027D1E93B003A9370 /* LVBubbleSort.m in Sources */,
 				12CD7B481B05DA9C00F9EE4D /* LVOpenFlashViewController.m in Sources */,
 				12BE8D1C1B61D08C004C4AC4 /* UINavigationBar+Awesome.m in Sources */,
+				A148D99827D202AB003A9370 /* LVInsertSort.m in Sources */,
 				129C4DFF1B1EF056001253AA /* LVViewController.m in Sources */,
 				124EB3FB1B04A2D500C89BA7 /* LVInfoViewController.m in Sources */,
 				124EB3F61B04942700C89BA7 /* LVBlueToothViewController.m in Sources */,
 				12764A961AFC98590096002D /* ViewController.m in Sources */,
 				12764AB81AFC9BA50096002D /* LVTouchIdViewController.m in Sources */,
 				124EB4031B04A3E600C89BA7 /* MBProgressHUD+MJ.m in Sources */,
+				A148D99C27D20587003A9370 /* LVBinarySearch.m in Sources */,
 				D9A676541B501A4F0087632F /* LVSearchViewController.m in Sources */,
 				12BE8D1F1B622647004C4AC4 /* LVSearchResultController.m in Sources */,
 				D94428FA1B3E63B400104000 /* LVDragViewController.m in Sources */,
@@ -523,11 +595,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = N7CN8RKLZ7;
 				GCC_PREFIX_HEADER = LVDevelopDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = LVDevelopDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -536,11 +610,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = N7CN8RKLZ7;
 				GCC_PREFIX_HEADER = LVDevelopDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = LVDevelopDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
