@@ -12,7 +12,7 @@
 
 #pragma mark - 冒泡排序 优化
 // 如果序列尾部已经局部有序，可以记录最后一次交换的位置，减少交换次数！
-- (void)bubbleSort:(NSMutableArray<NSNumber *> *)array {
++ (void)bubbleSort:(NSMutableArray<NSNumber *> *)array {
     // 4个   3
     for (int end = (int)array.count - 1; end > 0; end--) {
         NSLog(@"end==%d", end);
@@ -34,7 +34,7 @@
 
 
 #pragma mark - 冒泡排序 优化，如果不再交换，则停止冒泡
-- (void)bubbleSort3:(NSMutableArray<NSNumber *> *)array {
++ (void)bubbleSort3:(NSMutableArray<NSNumber *> *)array {
     for (int i = 0; i < array.count; i++) {
         int a = [array[i] intValue];
         BOOL sorted = YES;
@@ -56,7 +56,7 @@
 
 
 #pragma mark - 冒泡排序，普通交换
-- (void)bubbleSort2:(NSMutableArray<NSNumber *> *)array {
++ (void)bubbleSort2:(NSMutableArray<NSNumber *> *)array {
     for (int i = 0; i < array.count; i++) {
         int a = [array[i] intValue];
         for (int j = i + 1; j < array.count; j++) {
@@ -71,7 +71,7 @@
 }
 
 #pragma mark - 冒泡排序1 经典 交换！
-- (void)bubbleSort1:(NSMutableArray<NSNumber *> *)array {
++ (void)bubbleSort1:(NSMutableArray<NSNumber *> *)array {
     
     for (int end = (int)array.count - 1; end > 0; end--) {
         for (int begin = 1; begin <= end; begin++) {
