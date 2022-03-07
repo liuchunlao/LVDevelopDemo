@@ -36,6 +36,7 @@
 		A148D99327D1F5D1003A9370 /* LVSelectionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A148D99227D1F5D1003A9370 /* LVSelectionSort.m */; };
 		A148D99827D202AB003A9370 /* LVInsertSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A148D99727D202AB003A9370 /* LVInsertSort.m */; };
 		A148D99C27D20587003A9370 /* LVBinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = A148D99B27D20587003A9370 /* LVBinarySearch.m */; };
+		A156CA2227D5CACF00F54378 /* LVMergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A156CA2127D5CACF00F54378 /* LVMergeSort.m */; };
 		D94428FA1B3E63B400104000 /* LVDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94428F91B3E63B400104000 /* LVDragViewController.m */; };
 		D9A676541B501A4F0087632F /* LVSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A676521B501A4F0087632F /* LVSearchViewController.m */; };
 		D9A676551B501A4F0087632F /* LVSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A676531B501A4F0087632F /* LVSearchViewController.xib */; };
@@ -104,6 +105,8 @@
 		A148D99727D202AB003A9370 /* LVInsertSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVInsertSort.m; sourceTree = "<group>"; };
 		A148D99A27D20587003A9370 /* LVBinarySearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVBinarySearch.h; sourceTree = "<group>"; };
 		A148D99B27D20587003A9370 /* LVBinarySearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVBinarySearch.m; sourceTree = "<group>"; };
+		A156CA2027D5CACF00F54378 /* LVMergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVMergeSort.h; sourceTree = "<group>"; };
+		A156CA2127D5CACF00F54378 /* LVMergeSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVMergeSort.m; sourceTree = "<group>"; };
 		D94428F81B3E63B400104000 /* LVDragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDragViewController.h; sourceTree = "<group>"; };
 		D94428F91B3E63B400104000 /* LVDragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDragViewController.m; sourceTree = "<group>"; };
 		D9A676511B501A4F0087632F /* LVSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVSearchViewController.h; sourceTree = "<group>"; };
@@ -276,6 +279,7 @@
 		A148D98927D1AE24003A9370 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
+				A156CA1F27D5CABE00F54378 /* MergeSort */,
 				A148D99927D20577003A9370 /* BinarySearch */,
 				A148D99527D202A0003A9370 /* InserSort */,
 				A148D99427D20292003A9370 /* SelectionSort */,
@@ -320,6 +324,15 @@
 				A148D99B27D20587003A9370 /* LVBinarySearch.m */,
 			);
 			path = BinarySearch;
+			sourceTree = "<group>";
+		};
+		A156CA1F27D5CABE00F54378 /* MergeSort */ = {
+			isa = PBXGroup;
+			children = (
+				A156CA2027D5CACF00F54378 /* LVMergeSort.h */,
+				A156CA2127D5CACF00F54378 /* LVMergeSort.m */,
+			);
+			path = MergeSort;
 			sourceTree = "<group>";
 		};
 		D94428F71B3E637500104000 /* dragDown */ = {
@@ -462,6 +475,7 @@
 				12BE8D1C1B61D08C004C4AC4 /* UINavigationBar+Awesome.m in Sources */,
 				A148D99827D202AB003A9370 /* LVInsertSort.m in Sources */,
 				129C4DFF1B1EF056001253AA /* LVViewController.m in Sources */,
+				A156CA2227D5CACF00F54378 /* LVMergeSort.m in Sources */,
 				124EB3FB1B04A2D500C89BA7 /* LVInfoViewController.m in Sources */,
 				124EB3F61B04942700C89BA7 /* LVBlueToothViewController.m in Sources */,
 				12764A961AFC98590096002D /* ViewController.m in Sources */,

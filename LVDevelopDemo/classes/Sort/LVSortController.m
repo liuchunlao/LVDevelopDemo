@@ -7,10 +7,13 @@
 //
 
 #import "LVSortController.h"
+#import "LVMergeSort.h"
 
 @interface LVSortController ()
 
 @property (nonatomic, assign) int count;
+
+@property (nonatomic, strong) NSMutableArray *arr;
 
 @end
 
@@ -22,52 +25,15 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSMutableArray *arr = @[@1, @3, @2, @8, @6, @34, @20, @12].mutableCopy;
-    [self insertSort2:arr];
-    NSLog(@"%@", arr);
-}
-
-
-#pragma mark - 插入排序 优化
-/**
- * 二分查找法优化！
- */
-- (void)insertSort2:(NSMutableArray *)array {
- 
-    for (int begin = 1; begin < array.count; begin++) {
-        
-        int cur = begin;
-        NSNumber *tmp = array[cur];
-        // 使用二分查找法找到元素的合适位置
-        int dest = [self searchArray:array index:cur];
-        NSLog(@"%d", dest);
-        for (int i = cur; i > dest; i--) {
-            array[i] = array[i - 1];
-        }
-        array[dest] = tmp;
-        NSLog(@"%@", array);
-    }
-}
-
-- (int)searchArray:(NSMutableArray *)array index:(int)idx {
+    self.arr = @[@1, @3, @2, @8, @6, @18, @20, @12].mutableCopy;
     
     int begin = 0;
-    int end = idx;
+    int end = (int)self.arr.count;
+    [LVMergeSort mergeSortBegin:begin end:(int)end array:self.arr];
     
-    int destValue = [array[idx] intValue];
-    while (begin < end) {
-        // 动态修改mid值
-        int mid = (begin + end) >> 1;
-        int midValue = [array[mid] intValue];
-        if (destValue < midValue) {
-            end = mid;
-        } else if (destValue > midValue) {
-            begin = mid + 1;
-        }
-    }
-    // 未找到，就在起始位置
-    return begin;
+    NSLog(@"%@", self.arr);
 }
+
 
 
 
