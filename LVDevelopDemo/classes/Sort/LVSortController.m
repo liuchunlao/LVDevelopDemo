@@ -25,7 +25,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    self.arr = @[@1, @3, @9, @5, @7, @17, @19, @20].mutableCopy;
+    self.arr = @[@1, @3, @9, @2, @8, @17].mutableCopy;
     
     // 奇偶数排序
     [self sortArr:self.arr];
@@ -54,11 +54,18 @@
     
     for (int j = idx + 1; j < array.count; j++) {
         if (([array[j] intValue] % 2) != 0) {
-            // 碰到奇数 就换位置，并将索引 + 1
-            NSNumber *tmp = array[idx];
-            array[idx] = array[j];
-            array[j] = tmp;
-            idx++;
+            // 碰到奇数 交换位置，并将索引 + 1  不稳定
+//            NSNumber *tmp = array[idx];
+//            array[idx] = array[j];
+//            array[j] = tmp;
+//            idx++;
+            
+            // 碰到奇数 将idx至j-1的位置数据后移一位。再将奇数赋值到idx位置。 稳定
+            NSNumber *tmp = array[j];
+            for (int k = j; k >= idx; k--) {
+                array[k] = array[k - 1];
+            }
+            array[idx] = tmp;
         }
     }
 }
