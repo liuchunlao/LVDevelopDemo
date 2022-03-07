@@ -25,16 +25,46 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    self.arr = @[@1, @3, @2, @8, @6, @18, @20, @12].mutableCopy;
+    self.arr = @[@1, @3, @9, @5, @7, @17, @19, @20].mutableCopy;
     
-    int begin = 0;
-    int end = (int)self.arr.count;
-    [LVMergeSort mergeSortBegin:begin end:(int)end array:self.arr];
-    
+    // 奇偶数排序
+    [self sortArr:self.arr];
     NSLog(@"%@", self.arr);
 }
 
 
 
 
+#pragma mark - 奇偶数分组
+- (void)sortArr:(NSMutableArray *)array {
+    
+    int idx = -1;
+    for (int i = 0; i < array.count; i++) {
+        if (([array[i] intValue] % 2) == 0) {
+            // 第一个偶数的位置
+            idx = i;
+            break;
+        }
+    }
+    if (idx == -1) {
+        NSLog(@"没有偶数");
+        return;
+    }
+    NSLog(@"%d", idx);
+    
+    for (int j = idx + 1; j < array.count; j++) {
+        if (([array[j] intValue] % 2) != 0) {
+            // 碰到奇数 就换位置，并将索引 + 1
+            NSNumber *tmp = array[idx];
+            array[idx] = array[j];
+            array[j] = tmp;
+            idx++;
+        }
+    }
+}
+
+
 @end
+
+
+
