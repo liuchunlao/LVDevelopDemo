@@ -7,7 +7,7 @@
 //
 
 #import "LVSortController.h"
-#import "LVMergeSort.h"
+#import "LVPivotSort.h"
 
 @interface LVSortController ()
 
@@ -27,8 +27,9 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     self.arr = @[@1, @3, @9, @2, @8, @17].mutableCopy;
     
-    // 奇偶数排序
-    [self sortArr:self.arr];
+    
+    [LVPivotSort sortBegin:0 end:(int)self.arr.count arr:_arr];
+    
     NSLog(@"%@", self.arr);
 }
 
