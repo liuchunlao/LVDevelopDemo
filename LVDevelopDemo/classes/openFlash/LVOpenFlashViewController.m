@@ -64,43 +64,38 @@
 #pragma mark - 打开闪光灯
 - (IBAction)open:(UIButton *)sender {
     NSLog(@"打开");
-    self.openBtn.userInteractionEnabled = NO;
-    self.closeBtn.userInteractionEnabled = YES;
+    AVCaptureDevice *device = self.captureDevice;
+      
+  //修改前必须先锁定
+  [self.captureDevice lockForConfiguration:nil];
+  
+  //必须判定是否有闪光灯，否则如果没有闪光灯会崩溃
+  if ([self.captureDevice hasFlash]) {
+      if (self.captureDevice.flashMode == AVCaptureFlashModeOff) {
+          self.captureDevice.flashMode = AVCaptureFlashModeOn;
+          self.captureDevice.torchMode = AVCaptureTorchModeOn;
+      }
+  }
+  [device unlockForConfiguration];
     
-    [self.captureSession beginConfiguration];
-    [self.captureDevice lockForConfiguration:nil];
-    
-    if(self.captureDevice.torchMode == AVCaptureTorchModeOff) {
-    
-        [self.captureDevice setTorchMode:AVCaptureTorchModeOn];
-        [self.captureDevice setFlashMode:AVCaptureFlashModeOn];
-    }
-    
-    [self.captureDevice unlockForConfiguration];
-    [self.captureSession commitConfiguration];
-    
-    [self.captureSession startRunning];
 }
 
 #pragma mark - 关闭闪光灯
 - (IBAction)close:(UIButton *)sender {
     NSLog(@"关闭");
-    self.openBtn.userInteractionEnabled = YES;
-    self.closeBtn.userInteractionEnabled = NO;
-    
-    [self.captureSession beginConfiguration];
+    AVCaptureDevice *device = self.captureDevice;
+      
+    //修改前必须先锁定
     [self.captureDevice lockForConfiguration:nil];
-    
-    if(self.captureDevice.torchMode == AVCaptureTorchModeOn) {
-        
-        [self.captureDevice setTorchMode:AVCaptureTorchModeOff];
-        [self.captureDevice setFlashMode:AVCaptureFlashModeOff];
+
+    //必须判定是否有闪光灯，否则如果没有闪光灯会崩溃
+    if ([self.captureDevice hasFlash]) {
+        if (self.captureDevice.flashMode == AVCaptureFlashModeOn) {
+            self.captureDevice.flashMode = AVCaptureFlashModeOff;
+            self.captureDevice.torchMode = AVCaptureTorchModeOff;
+        }
     }
-    
-    [self.captureDevice unlockForConfiguration];
-    [self.captureSession commitConfiguration];
-    
-    [self.captureSession stopRunning];
+    [device unlockForConfiguration];
 }
 
 #pragma mark - 改变闪光灯的亮度

@@ -58,9 +58,7 @@
         [authentication evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:@"请验证已有指纹" reply:^(BOOL success, NSError *error) {
             if (success) {
                 NSLog(@"指纹验证成功");
-                
-                // 登录 演示
-                [self loginDemo];
+                [self performSelector:@selector(loginDemo) onThread:NSThread.mainThread withObject:nil waitUntilDone:NO];
                 
             } else {
                 
