@@ -36,6 +36,8 @@
 		A148D99327D1F5D1003A9370 /* LVSelectionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A148D99227D1F5D1003A9370 /* LVSelectionSort.m */; };
 		A148D99827D202AB003A9370 /* LVInsertSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A148D99727D202AB003A9370 /* LVInsertSort.m */; };
 		A148D99C27D20587003A9370 /* LVBinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = A148D99B27D20587003A9370 /* LVBinarySearch.m */; };
+		A151CB0B27F1575500058976 /* LVHanoi.m in Sources */ = {isa = PBXBuildFile; fileRef = A151CB0A27F1575500058976 /* LVHanoi.m */; };
+		A151CB0E27F17A4B00058976 /* LVStairs.m in Sources */ = {isa = PBXBuildFile; fileRef = A151CB0D27F17A4A00058976 /* LVStairs.m */; };
 		A156CA2227D5CACF00F54378 /* LVMergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A156CA2127D5CACF00F54378 /* LVMergeSort.m */; };
 		A173A65627D7581C0094CA7F /* LVPivotSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A173A65527D7581C0094CA7F /* LVPivotSort.m */; };
 		D94428FA1B3E63B400104000 /* LVDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94428F91B3E63B400104000 /* LVDragViewController.m */; };
@@ -106,6 +108,10 @@
 		A148D99727D202AB003A9370 /* LVInsertSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVInsertSort.m; sourceTree = "<group>"; };
 		A148D99A27D20587003A9370 /* LVBinarySearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVBinarySearch.h; sourceTree = "<group>"; };
 		A148D99B27D20587003A9370 /* LVBinarySearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVBinarySearch.m; sourceTree = "<group>"; };
+		A151CB0927F1575500058976 /* LVHanoi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVHanoi.h; sourceTree = "<group>"; };
+		A151CB0A27F1575500058976 /* LVHanoi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVHanoi.m; sourceTree = "<group>"; };
+		A151CB0C27F17A4A00058976 /* LVStairs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVStairs.h; sourceTree = "<group>"; };
+		A151CB0D27F17A4A00058976 /* LVStairs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVStairs.m; sourceTree = "<group>"; };
 		A156CA2027D5CACF00F54378 /* LVMergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVMergeSort.h; sourceTree = "<group>"; };
 		A156CA2127D5CACF00F54378 /* LVMergeSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVMergeSort.m; sourceTree = "<group>"; };
 		A173A65427D7581C0094CA7F /* LVPivotSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVPivotSort.h; sourceTree = "<group>"; };
@@ -238,6 +244,7 @@
 		12764AB31AFC9B1E0096002D /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				A151CB0827F156FB00058976 /* 递归recursion */,
 				A148D98927D1AE24003A9370 /* Sort */,
 				D9A676501B501A350087632F /* Search */,
 				129C4DFB1B1EF034001253AA /* AesEncryption */,
@@ -328,6 +335,17 @@
 				A148D99B27D20587003A9370 /* LVBinarySearch.m */,
 			);
 			path = BinarySearch;
+			sourceTree = "<group>";
+		};
+		A151CB0827F156FB00058976 /* 递归recursion */ = {
+			isa = PBXGroup;
+			children = (
+				A151CB0927F1575500058976 /* LVHanoi.h */,
+				A151CB0A27F1575500058976 /* LVHanoi.m */,
+				A151CB0C27F17A4A00058976 /* LVStairs.h */,
+				A151CB0D27F17A4A00058976 /* LVStairs.m */,
+			);
+			path = "递归recursion";
 			sourceTree = "<group>";
 		};
 		A156CA1F27D5CABE00F54378 /* MergeSort */ = {
@@ -496,8 +514,10 @@
 				12764AB81AFC9BA50096002D /* LVTouchIdViewController.m in Sources */,
 				124EB4031B04A3E600C89BA7 /* MBProgressHUD+MJ.m in Sources */,
 				A148D99C27D20587003A9370 /* LVBinarySearch.m in Sources */,
+				A151CB0E27F17A4B00058976 /* LVStairs.m in Sources */,
 				D9A676541B501A4F0087632F /* LVSearchViewController.m in Sources */,
 				12BE8D1F1B622647004C4AC4 /* LVSearchResultController.m in Sources */,
+				A151CB0B27F1575500058976 /* LVHanoi.m in Sources */,
 				D94428FA1B3E63B400104000 /* LVDragViewController.m in Sources */,
 				129C4E031B1EF77B001253AA /* LVEncryptionTool.m in Sources */,
 				12764A931AFC98590096002D /* AppDelegate.m in Sources */,

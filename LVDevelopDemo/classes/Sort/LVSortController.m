@@ -8,6 +8,8 @@
 
 #import "LVSortController.h"
 #import "LVPivotSort.h"
+#import "LVHanoi.h"
+#import "LVStairs.h"
 
 @interface LVSortController ()
 
@@ -25,15 +27,29 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    self.arr = @[@1, @3, @9, @2, @8, @17].mutableCopy;
-    
-    
-    [LVPivotSort sortBegin:0 end:(int)self.arr.count arr:_arr];
-    
-    NSLog(@"%@", self.arr);
+
+    [self climbStairs];
+
 }
 
+#pragma mark - 跳台阶
+- (void)climbStairs {
+    int count = [LVStairs climbStairs:10];
+    NSLog(@"%@", @(count).description);
+}
 
+#pragma mark - 快速排序
+- (void)pivotSort {
+    self.arr = @[@1, @3, @9, @2, @8, @17].mutableCopy;
+    [LVPivotSort sortBegin:0 end:(int)self.arr.count arr:_arr];
+//
+//    NSLog(@"%@", self.arr);
+}
+
+#pragma mark - 汉诺塔
+- (void)hanoi {
+    [LVHanoi hanoiCount:10 from:@"1" through:@"2" to:@"3"];
+}
 
 
 #pragma mark - 奇偶数分组
