@@ -30,8 +30,14 @@
     NSArray *arr = [info componentsSeparatedByString:@","];
     NSMutableArray *arrM = arr.mutableCopy;
     [self quickSortArray:arrM withLeftIndex:0 andRightIndex:arr.count - 1];
-    
-    NSLog(@"%@", arrM);
+    NSMutableString *strM = [NSMutableString string];
+    [arrM enumerateObjectsUsingBlock:^(NSNumber * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [strM appendString:obj.description];
+        if (idx != arrM.count - 1) {
+            [strM appendString:@","];
+        }
+    }];
+    _fld.text = strM;
 }
 
 - (void)quickSortArray:(NSMutableArray *)array withLeftIndex:(NSInteger)leftIndex andRightIndex:(NSInteger)rightIndex {
