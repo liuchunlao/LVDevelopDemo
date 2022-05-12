@@ -47,6 +47,8 @@
 		EB88E437282CDE6500657B97 /* LVZipController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB88E435282CDE6500657B97 /* LVZipController.xib */; };
 		EB9F1C66282CEC280070180F /* LVReverseController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1C64282CEC280070180F /* LVReverseController.m */; };
 		EB9F1C67282CEC280070180F /* LVReverseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB9F1C65282CEC280070180F /* LVReverseController.xib */; };
+		EB9F1C6C282CF2390070180F /* LVFactorialController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1C6A282CF2390070180F /* LVFactorialController.m */; };
+		EB9F1C6D282CF2390070180F /* LVFactorialController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB9F1C6B282CF2390070180F /* LVFactorialController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,9 @@
 		EB9F1C63282CEC280070180F /* LVReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVReverseController.h; sourceTree = "<group>"; };
 		EB9F1C64282CEC280070180F /* LVReverseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVReverseController.m; sourceTree = "<group>"; };
 		EB9F1C65282CEC280070180F /* LVReverseController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LVReverseController.xib; sourceTree = "<group>"; };
+		EB9F1C69282CF2390070180F /* LVFactorialController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVFactorialController.h; sourceTree = "<group>"; };
+		EB9F1C6A282CF2390070180F /* LVFactorialController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVFactorialController.m; sourceTree = "<group>"; };
+		EB9F1C6B282CF2390070180F /* LVFactorialController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LVFactorialController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +259,7 @@
 		12764AB31AFC9B1E0096002D /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				EB9F1C68282CF2050070180F /* 递归排序 */,
 				EB9F1C62282CEC140070180F /* Reverse */,
 				EB88E432282CDE4D00657B97 /* Zip */,
 				A151CB0827F156FB00058976 /* 递归recursion */,
@@ -421,6 +427,16 @@
 			path = Reverse;
 			sourceTree = "<group>";
 		};
+		EB9F1C68282CF2050070180F /* 递归排序 */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F1C69282CF2390070180F /* LVFactorialController.h */,
+				EB9F1C6A282CF2390070180F /* LVFactorialController.m */,
+				EB9F1C6B282CF2390070180F /* LVFactorialController.xib */,
+			);
+			path = "递归排序";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -508,6 +524,7 @@
 				124EB3FC1B04A2D500C89BA7 /* LVInfoViewController.xib in Resources */,
 				12CD7B491B05DA9C00F9EE4D /* LVOpenFlashViewController.xib in Resources */,
 				124EB3F71B04942700C89BA7 /* LVBlueToothViewController.xib in Resources */,
+				EB9F1C6D282CF2390070180F /* LVFactorialController.xib in Resources */,
 				EB9F1C67282CEC280070180F /* LVReverseController.xib in Resources */,
 				D9A676551B501A4F0087632F /* LVSearchViewController.xib in Resources */,
 				12764A9B1AFC98590096002D /* Images.xcassets in Resources */,
@@ -534,6 +551,7 @@
 				A148D99327D1F5D1003A9370 /* LVSelectionSort.m in Sources */,
 				12CD7B441B05D96D00F9EE4D /* UIView+Extension.m in Sources */,
 				A148D98C27D1AE48003A9370 /* LVSortController.m in Sources */,
+				EB9F1C6C282CF2390070180F /* LVFactorialController.m in Sources */,
 				12B81F791B4CCAF100593A34 /* LVBlutToothFile in Sources */,
 				A173A65627D7581C0094CA7F /* LVPivotSort.m in Sources */,
 				A148D99027D1E93B003A9370 /* LVBubbleSort.m in Sources */,

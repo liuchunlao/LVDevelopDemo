@@ -16,6 +16,7 @@
 #import "LVSortController.h"
 #import "LVZipController.h"
 #import "LVReverseController.h"
+#import "LVFactorialController.h"
 
 
 
@@ -106,6 +107,10 @@
 #pragma mark - 压缩、解压
         case 7:
             [self.navigationController pushViewController:[[LVZipController alloc] init] animated:YES];
+            break;
+#pragma mark - 递归排序
+        case 8:
+            [self.navigationController pushViewController:[[LVFactorialController alloc] init] animated:YES];
             break;
 #pragma mark - 字符串倒序
         case 9:
