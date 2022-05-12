@@ -43,6 +43,10 @@
 		D94428FA1B3E63B400104000 /* LVDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94428F91B3E63B400104000 /* LVDragViewController.m */; };
 		D9A676541B501A4F0087632F /* LVSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A676521B501A4F0087632F /* LVSearchViewController.m */; };
 		D9A676551B501A4F0087632F /* LVSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A676531B501A4F0087632F /* LVSearchViewController.xib */; };
+		EB88E436282CDE6500657B97 /* LVZipController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88E434282CDE6500657B97 /* LVZipController.m */; };
+		EB88E437282CDE6500657B97 /* LVZipController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB88E435282CDE6500657B97 /* LVZipController.xib */; };
+		EB9F1C66282CEC280070180F /* LVReverseController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1C64282CEC280070180F /* LVReverseController.m */; };
+		EB9F1C67282CEC280070180F /* LVReverseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB9F1C65282CEC280070180F /* LVReverseController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +125,12 @@
 		D9A676511B501A4F0087632F /* LVSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVSearchViewController.h; sourceTree = "<group>"; };
 		D9A676521B501A4F0087632F /* LVSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVSearchViewController.m; sourceTree = "<group>"; };
 		D9A676531B501A4F0087632F /* LVSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LVSearchViewController.xib; sourceTree = "<group>"; };
+		EB88E433282CDE6500657B97 /* LVZipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVZipController.h; sourceTree = "<group>"; };
+		EB88E434282CDE6500657B97 /* LVZipController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVZipController.m; sourceTree = "<group>"; };
+		EB88E435282CDE6500657B97 /* LVZipController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LVZipController.xib; sourceTree = "<group>"; };
+		EB9F1C63282CEC280070180F /* LVReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVReverseController.h; sourceTree = "<group>"; };
+		EB9F1C64282CEC280070180F /* LVReverseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVReverseController.m; sourceTree = "<group>"; };
+		EB9F1C65282CEC280070180F /* LVReverseController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LVReverseController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +254,8 @@
 		12764AB31AFC9B1E0096002D /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				EB9F1C62282CEC140070180F /* Reverse */,
+				EB88E432282CDE4D00657B97 /* Zip */,
 				A151CB0827F156FB00058976 /* 递归recursion */,
 				A148D98927D1AE24003A9370 /* Sort */,
 				D9A676501B501A350087632F /* Search */,
@@ -389,6 +401,26 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		EB88E432282CDE4D00657B97 /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				EB88E433282CDE6500657B97 /* LVZipController.h */,
+				EB88E434282CDE6500657B97 /* LVZipController.m */,
+				EB88E435282CDE6500657B97 /* LVZipController.xib */,
+			);
+			path = Zip;
+			sourceTree = "<group>";
+		};
+		EB9F1C62282CEC140070180F /* Reverse */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F1C63282CEC280070180F /* LVReverseController.h */,
+				EB9F1C64282CEC280070180F /* LVReverseController.m */,
+				EB9F1C65282CEC280070180F /* LVReverseController.xib */,
+			);
+			path = Reverse;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -476,8 +508,10 @@
 				124EB3FC1B04A2D500C89BA7 /* LVInfoViewController.xib in Resources */,
 				12CD7B491B05DA9C00F9EE4D /* LVOpenFlashViewController.xib in Resources */,
 				124EB3F71B04942700C89BA7 /* LVBlueToothViewController.xib in Resources */,
+				EB9F1C67282CEC280070180F /* LVReverseController.xib in Resources */,
 				D9A676551B501A4F0087632F /* LVSearchViewController.xib in Resources */,
 				12764A9B1AFC98590096002D /* Images.xcassets in Resources */,
+				EB88E437282CDE6500657B97 /* LVZipController.xib in Resources */,
 				129C4E001B1EF056001253AA /* LVViewController.xib in Resources */,
 				124EB4041B04A3E600C89BA7 /* MBProgressHUD.bundle in Resources */,
 			);
@@ -507,9 +541,11 @@
 				12BE8D1C1B61D08C004C4AC4 /* UINavigationBar+Awesome.m in Sources */,
 				A148D99827D202AB003A9370 /* LVInsertSort.m in Sources */,
 				129C4DFF1B1EF056001253AA /* LVViewController.m in Sources */,
+				EB88E436282CDE6500657B97 /* LVZipController.m in Sources */,
 				A156CA2227D5CACF00F54378 /* LVMergeSort.m in Sources */,
 				124EB3FB1B04A2D500C89BA7 /* LVInfoViewController.m in Sources */,
 				124EB3F61B04942700C89BA7 /* LVBlueToothViewController.m in Sources */,
+				EB9F1C66282CEC280070180F /* LVReverseController.m in Sources */,
 				12764A961AFC98590096002D /* ViewController.m in Sources */,
 				12764AB81AFC9BA50096002D /* LVTouchIdViewController.m in Sources */,
 				124EB4031B04A3E600C89BA7 /* MBProgressHUD+MJ.m in Sources */,

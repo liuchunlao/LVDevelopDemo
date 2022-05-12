@@ -14,6 +14,8 @@
 #import "LVDragViewController.h"
 #import "LVSearchViewController.h"
 #import "LVSortController.h"
+#import "LVZipController.h"
+#import "LVReverseController.h"
 
 
 
@@ -29,7 +31,7 @@
 
 - (NSArray *)funcArr {
     if (!_funcArr) {
-        _funcArr = @[@"指纹识别", @"蓝牙设备扫描、连接", @"打开闪光灯", @"AES加密",@"下拉放大效果", @"搜索框Demo", @"排序"];
+        _funcArr = @[@"指纹识别", @"蓝牙设备扫描、连接", @"打开闪光灯", @"AES加密",@"下拉放大效果", @"搜索框Demo", @"排序", @"傻瓜压缩器", @"递归排序", @"倒序字符串"];
     }
     return _funcArr;
 }
@@ -100,12 +102,22 @@
 #pragma mark - 搜索框
         case 6:
             [self.navigationController pushViewController:[[LVSortController alloc] init] animated:YES];
-            
-            
-            
+            break;
+#pragma mark - 压缩、解压
+        case 7:
+            [self.navigationController pushViewController:[[LVZipController alloc] init] animated:YES];
+            break;
+#pragma mark - 字符串倒序
+        case 9:
+            [self.navigationController pushViewController:[[LVReverseController alloc] init] animated:YES];
+            break;
         default:
             break;
     }
+    
+//    UIViewController *vc = [[UIViewController alloc] init];
+//    vc.navigationItem.title = self.funcArr[indexPath.row];
+//    [self.navigationController pushViewController:vc animated:YES];
 
 }
 
