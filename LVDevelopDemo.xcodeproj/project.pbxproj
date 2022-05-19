@@ -45,6 +45,7 @@
 		D9A676551B501A4F0087632F /* LVSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A676531B501A4F0087632F /* LVSearchViewController.xib */; };
 		EB88E436282CDE6500657B97 /* LVZipController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88E434282CDE6500657B97 /* LVZipController.m */; };
 		EB88E437282CDE6500657B97 /* LVZipController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB88E435282CDE6500657B97 /* LVZipController.xib */; };
+		EB9C9080283608AE00AE11D0 /* LVArraySepController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9C907F283608AE00AE11D0 /* LVArraySepController.m */; };
 		EB9F1C66282CEC280070180F /* LVReverseController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1C64282CEC280070180F /* LVReverseController.m */; };
 		EB9F1C67282CEC280070180F /* LVReverseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB9F1C65282CEC280070180F /* LVReverseController.xib */; };
 		EB9F1C6C282CF2390070180F /* LVFactorialController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1C6A282CF2390070180F /* LVFactorialController.m */; };
@@ -130,6 +131,8 @@
 		EB88E433282CDE6500657B97 /* LVZipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVZipController.h; sourceTree = "<group>"; };
 		EB88E434282CDE6500657B97 /* LVZipController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVZipController.m; sourceTree = "<group>"; };
 		EB88E435282CDE6500657B97 /* LVZipController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LVZipController.xib; sourceTree = "<group>"; };
+		EB9C907E283608AE00AE11D0 /* LVArraySepController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVArraySepController.h; sourceTree = "<group>"; };
+		EB9C907F283608AE00AE11D0 /* LVArraySepController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVArraySepController.m; sourceTree = "<group>"; };
 		EB9F1C63282CEC280070180F /* LVReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVReverseController.h; sourceTree = "<group>"; };
 		EB9F1C64282CEC280070180F /* LVReverseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVReverseController.m; sourceTree = "<group>"; };
 		EB9F1C65282CEC280070180F /* LVReverseController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LVReverseController.xib; sourceTree = "<group>"; };
@@ -259,6 +262,7 @@
 		12764AB31AFC9B1E0096002D /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				EB9C907D2836088C00AE11D0 /* 数组分割 */,
 				EB9F1C68282CF2050070180F /* 递归排序 */,
 				EB9F1C62282CEC140070180F /* Reverse */,
 				EB88E432282CDE4D00657B97 /* Zip */,
@@ -417,6 +421,15 @@
 			path = Zip;
 			sourceTree = "<group>";
 		};
+		EB9C907D2836088C00AE11D0 /* 数组分割 */ = {
+			isa = PBXGroup;
+			children = (
+				EB9C907E283608AE00AE11D0 /* LVArraySepController.h */,
+				EB9C907F283608AE00AE11D0 /* LVArraySepController.m */,
+			);
+			path = "数组分割";
+			sourceTree = "<group>";
+		};
 		EB9F1C62282CEC140070180F /* Reverse */ = {
 			isa = PBXGroup;
 			children = (
@@ -560,6 +573,7 @@
 				A148D99827D202AB003A9370 /* LVInsertSort.m in Sources */,
 				129C4DFF1B1EF056001253AA /* LVViewController.m in Sources */,
 				EB88E436282CDE6500657B97 /* LVZipController.m in Sources */,
+				EB9C9080283608AE00AE11D0 /* LVArraySepController.m in Sources */,
 				A156CA2227D5CACF00F54378 /* LVMergeSort.m in Sources */,
 				124EB3FB1B04A2D500C89BA7 /* LVInfoViewController.m in Sources */,
 				124EB3F61B04942700C89BA7 /* LVBlueToothViewController.m in Sources */,

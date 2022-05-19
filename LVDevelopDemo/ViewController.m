@@ -17,6 +17,7 @@
 #import "LVZipController.h"
 #import "LVReverseController.h"
 #import "LVFactorialController.h"
+#import "LVArraySepController.h"
 
 
 
@@ -32,7 +33,7 @@
 
 - (NSArray *)funcArr {
     if (!_funcArr) {
-        _funcArr = @[@"指纹识别", @"蓝牙设备扫描、连接", @"打开闪光灯", @"AES加密",@"下拉放大效果", @"搜索框Demo", @"排序", @"傻瓜压缩器", @"递归排序", @"倒序字符串"];
+        _funcArr = @[@"指纹识别", @"蓝牙设备扫描、连接", @"打开闪光灯", @"AES加密",@"下拉放大效果", @"搜索框Demo", @"排序", @"傻瓜压缩器", @"递归排序", @"倒序字符串", @"数组分割"];
     }
     return _funcArr;
 }
@@ -116,6 +117,8 @@
         case 9:
             [self.navigationController pushViewController:[[LVReverseController alloc] init] animated:YES];
             break;
+        case 10:
+            [self.navigationController pushViewController:[[LVArraySepController alloc] init] animated:YES];
         default:
             break;
     }
