@@ -10,6 +10,8 @@
 #import "LVPivotSort.h"
 #import "LVHanoi.h"
 #import "LVStairs.h"
+#import "LVSelectionSort.h"
+#import "LVBinarySearch.h"
 
 @interface LVSortController ()
 
@@ -28,8 +30,15 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
-    [self climbStairs];
+    self.arr = @[@8, @7, @6, @3, @10, @9].mutableCopy;
+    [self binarySearch];
+}
 
+#pragma mark - 二分搜索
+- (void)binarySearch {
+    _arr = @[@1, @2, @4, @8, @10, @40].mutableCopy;
+    int idx = [LVBinarySearch binarySearch:_arr value:40];
+    NSLog(@"%d", idx);
 }
 
 #pragma mark - 跳台阶
@@ -40,10 +49,13 @@
 
 #pragma mark - 快速排序
 - (void)pivotSort {
-    self.arr = @[@1, @3, @9, @2, @8, @17].mutableCopy;
     [LVPivotSort sortBegin:0 end:(int)self.arr.count arr:_arr];
-//
-//    NSLog(@"%@", self.arr);
+    NSLog(@"%@", self.arr);
+}
+
+- (void)selectSort {
+    [LVSelectionSort selectionSort:self.arr];
+    NSLog(@"%@", _arr);
 }
 
 #pragma mark - 汉诺塔

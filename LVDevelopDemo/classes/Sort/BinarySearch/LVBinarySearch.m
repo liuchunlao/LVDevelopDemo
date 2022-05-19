@@ -25,6 +25,7 @@
         } else if (v > [array[mid] intValue]) {
             begin = mid + 1;
         } else {
+            NSLog(@"%d", mid);
             return mid;
         }
     }
